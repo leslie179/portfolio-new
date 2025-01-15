@@ -1,0 +1,20 @@
+.projectContainer {
+    position: relative; /* Make the container relative so we can position children within it */
+    min-height: 100vh; /* Ensure the container fills the screen */
+    padding-bottom: 50px; /* Add padding at the bottom to avoid overlapping the banner */
+  }
+  
+  .projectContent {
+    padding: 20px;
+    /* Add any additional styles for your project content */
+  }
+  
+  /* Position the Banner absolutely at the bottom of the container */
+  .projectContainer > .Banner {
+    position: absolute; /* Position Banner absolutely within the projectContainer */
+    bottom: 0; /* Fix the banner at the bottom of the container */
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure the banner is on top of the project content */
+  }
+  

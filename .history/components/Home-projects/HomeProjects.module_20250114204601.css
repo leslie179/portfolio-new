@@ -1,0 +1,9 @@
+.HomeProjects{
+    background-color: black;
+    z-index:2;
+    height: 300px;
+}
+
+Banner{
+    padding-top: 30%;
+}

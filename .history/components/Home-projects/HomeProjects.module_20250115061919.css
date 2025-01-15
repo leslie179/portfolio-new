@@ -1,0 +1,52 @@
+.HomeProjects {
+    background-color: black;
+    height: 1700px;
+}
+
+.Projects {
+    color: var(--yellow);
+    font-size: 300%;
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.firstImage {
+    position: absolute;
+    width: 100%;
+    z-index: 7;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.secondImage {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(10%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.thirdImage {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    transform: translateY(20%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.HermiePhoto {
+    min-width: 20%;
+    max-width: 60%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Banner {
+    padding-top: 30%;
+}

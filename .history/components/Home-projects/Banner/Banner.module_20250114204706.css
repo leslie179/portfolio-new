@@ -1,0 +1,38 @@
+.bannerContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--yellow);
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    top: 0; 
+    z-index: 3; 
+    transform: skewY(-5deg); 
+    margin-top: 16%;
+  }
+  
+  .banner {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+    transform: skewY(5deg); 
+  }
+  
+  .bannerItem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

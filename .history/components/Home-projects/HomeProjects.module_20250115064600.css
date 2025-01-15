@@ -1,0 +1,64 @@
+.HomeProjects {
+    background-color: black;
+    height: 2300px;
+}
+
+.Projects {
+    color: var(--yellow);
+    font-size: 300%;
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%; 
+    padding: 0 1rem; 
+}
+
+.HermiePhoto {
+    min-width: 20%;
+    max-width: 60%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.h3{
+    color: var(--yellow);
+    font-size: 300%;
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.p{
+    color: var(--yellow);
+    font-size: 150%;
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.Banner {
+    padding-top: 30%;
+}
+
+@media (max-width: 768px) {
+    .container {
+      min-width: 300px; 
+      justify-content: center;
+      padding: 0 2rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+      min-width: 200px; 
+      justify-content: center;
+      padding: 0 3rem; 
+    }
+}

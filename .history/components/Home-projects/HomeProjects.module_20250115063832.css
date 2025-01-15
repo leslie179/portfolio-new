@@ -1,0 +1,47 @@
+.HomeProjects {
+    background-color: black;
+    height: 2300px;
+}
+
+.Projects {
+    color: var(--yellow);
+    font-size: 300%;
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%; /* Full width to start with */
+}
+
+.HermiePhoto {
+    min-width: 20%;
+    max-width: 60%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Banner {
+    padding-top: 30%;
+}
+
+@media (min-width: 768px) {
+    .container {
+      min-width: 50%; /* Set a minimum width that's half of the viewport */
+      justify-content: center; 
+    }
+}
+
+/* Apply styles when the viewport width is at least 1024px */
+@media (min-width: 1024px) {
+    .container {
+      min-width: 75%; /* Set a minimum width that's 75% of the viewport */
+      justify-content: center;
+    }
+}

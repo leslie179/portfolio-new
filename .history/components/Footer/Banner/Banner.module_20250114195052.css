@@ -1,0 +1,28 @@
+.bannerContainer {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--yellow);
+}
+
+.banner {
+  display: flex;
+  animation: scrollText 10s linear infinite; /* Apply scrolling animation */
+}
+
+.bannerItem {
+  flex-shrink: 0;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Start with text off-screen from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End with text off-screen to the left */
+  }
+}

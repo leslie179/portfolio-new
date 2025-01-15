@@ -1,0 +1,24 @@
+.HomeProjects{
+    background-color: black;
+    height: 1700px;
+}
+
+.Banner{
+    padding-top: 30%;
+}
+
+.HermiePhoto {
+    
+    min-width: 20%;
+    max-width: 60%;
+    
+    transform: rotate(15deg);
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.Projects{
+    color: var(--yellow);
+    font-size: 40%;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,17 @@
+.HomeProjects{
+    background-color: black;
+    z-index:2;
+    height: 1700px;
+}
+
+.Banner{
+    padding-top: 30%;
+}
+
+.HermiePhoto {
+    position: relative; /* or 'absolute' or 'fixed' depending on your layout needs */
+    min-width: 20%;
+    max-width: 60%;
+    margin-top: 190%; /* Adjusted to a more typical value */
+    z-index: 5; /* Effective only with 'position' set to a value other than 'static' */
+}

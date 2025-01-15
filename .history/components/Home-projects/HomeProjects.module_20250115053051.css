@@ -1,0 +1,16 @@
+.HomeProjects{
+    background-color: black;
+    z-index:2;
+    height: 1700px;
+}
+
+.Banner{
+    padding-top: 30%;
+}
+
+.HermiePhoto{
+    min-width: 20%;
+    max-width: 60%;
+    margin-top: 20%;
+    z-index: 5;
+}

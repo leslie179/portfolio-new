@@ -1,0 +1,58 @@
+.Footer {
+  position: relative;
+  background-color: var(--yellow);
+  padding: 1rem;
+  text-align: center;
+  font-family: 'NickySans', Arial, Helvetica, sans-serif; /* Apply NickySans here */
+  margin-top: 100px;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 20px;
+  font-family: 'NickySans', Arial, Helvetica, sans-serif; /* Apply NickySans to text in columns */
+}
+
+.imgColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.imgColumn img {
+  max-width: 200px;
+  height: auto;
+}
+
+.links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: #000;
+  font-family: 'NickySans', sans-serif; /* Apply NickySans to links */
+}
+
+.links a:hover {
+  color: #007bff;
+}

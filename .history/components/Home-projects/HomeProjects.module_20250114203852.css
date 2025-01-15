@@ -1,0 +1,45 @@
+.projectContainer {
+    position: relative; /* Make the container relative so we can position children within it */
+    min-height: 100vh; /* Ensure the container fills the screen */
+  }
+  
+  .projectContent {
+    padding: 20px;
+    /* Add any additional styles for your project content */
+  }
+  
+  .bannerContainer {
+    position: absolute; /* Position banner at the bottom of the container */
+    bottom: 0; /* Align it to the bottom */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--yellow);
+    z-index: 2; /* Ensure the banner is on top of other content */
+  }
+  
+  .banner {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+    transform: skewY(-5deg);
+  }
+  
+  .bannerItem {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

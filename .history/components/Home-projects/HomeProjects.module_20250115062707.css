@@ -1,0 +1,29 @@
+.HomeProjects {
+    background-color: black;
+    height: 2300px;
+}
+
+.Projects {
+    color: var(--yellow);
+    font-size: 300%;
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+.HermiePhoto {
+    min-width: 20%;
+    max-width: 60%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Banner {
+    padding-top: 30%;
+}

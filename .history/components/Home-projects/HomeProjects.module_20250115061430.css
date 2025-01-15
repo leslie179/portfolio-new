@@ -1,0 +1,46 @@
+.HomeProjects {
+    background-color: black;
+    height: 1700px;
+}
+
+.Projects {
+    color: var(--yellow);
+    font-size: 300%; /* Ensure this is the intended size */
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlappingImage {
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Adjust the z-index and transform to control overlay */
+.first {
+    z-index: 3;
+    transform: translateY(0);
+}
+
+.second {
+    z-index: 2;
+    transform: translateY(10%);
+}
+
+.third {
+    z-index: 1;
+    transform: translateY(20%);
+}
+
+.HermiePhoto {
+    min-width: 20%;
+    max-width: 60%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    overflow: hidden;
+}

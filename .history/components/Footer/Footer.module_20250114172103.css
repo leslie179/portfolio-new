@@ -1,0 +1,42 @@
+.Footer {
+  background-color: var(--yellow);
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 769px) {
+  .container {
+      flex-direction: row; /* Keep items in a row on larger screens */
+  }
+  .column {
+      width: 33.33%; /* Each column takes up 1/3 of the container */
+  }
+
+  /* Move Column 2 to Column 1 on large screens */
+  .column:nth-child(2) {
+      order: -1; /* Move Column 2 before Column 1 */
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack columns vertically */
+  }
+  .column {
+      width: 100%; /* Each column takes up the full width */
+      padding: 10px 0;
+  }
+}

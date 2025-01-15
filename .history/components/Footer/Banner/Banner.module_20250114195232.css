@@ -1,0 +1,23 @@
+.bannerContainer {
+  overflow: hidden;
+  width: 100%;
+  background-color: var(--yellow);
+}
+
+.banner {
+  display: flex;
+  animation: scrollText 10s linear infinite; /* Apply scrolling animation */
+}
+
+.bannerItem {
+  flex-shrink: 0;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  white-space: nowrap;
+}
+
+@keyframes animate_text {
+    from {transform: translate3d(0, 0, 0);}
+    to {transform: translate3d(-100%, 0, 0);}

@@ -1,0 +1,24 @@
+.banner {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: fit-content; /* Ensure the content stretches based on its total width */
+}
+
+.bannerItem {
+    flex-shrink: 0;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll fully off-screen */
+    }
+    
+}

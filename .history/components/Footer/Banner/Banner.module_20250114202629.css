@@ -1,0 +1,36 @@
+.bannerContainer {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--yellow); /* Background color of the banner */
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    top: 0; /* Position the banner at the top of the page */
+    z-index: 2;
+  }
+  
+  .banner {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Apply animation for continuous scroll */
+    white-space: nowrap; /* Keep the text in a single line */
+  }
+  
+  .bannerItem {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif; /* Font family */
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%); /* Start from the right side */
+    }
+    100% {
+      transform: translateX(-100%); /* End at the left side */
+    }
+  }
+  

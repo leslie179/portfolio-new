@@ -1,0 +1,51 @@
+.bannerContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--yellow);
+  display: flex;
+  padding-top: 1%;
+  height: 160px; /* Default height for larger screens */
+  position: absolute;
+  top: 0; 
+  z-index: 3; 
+  transform: skewY(-5deg); 
+  margin-top: 13%;
+}
+
+/* Increase height for devices with max-width of 768px */
+@media (max-width: 768px) {
+.bannerContainer {
+  height: 290px; /* Increased height for smaller screens */
+}
+}
+
+/* Optional: further increase for even smaller screens */
+@media (max-width: 480px) {
+.bannerContainer {
+  height: 240px; /* Further increased height for very small screens */
+}
+}
+
+.banner {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  white-space: nowrap;
+  transform: skewY(5deg); 
+}
+
+.bannerItem {
+  font-size: 35px;
+  font-weight: bold;
+  color: #000;
+  font-family: 'NickySans', Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

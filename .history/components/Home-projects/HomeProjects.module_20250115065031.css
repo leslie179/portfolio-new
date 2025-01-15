@@ -1,0 +1,67 @@
+/* Main container styling */
+.HomeProjects {
+    background-color: black;
+    height: 2300px; /* Adjust height as necessary */
+}
+
+/* Styling for the projects heading */
+.Projects {
+    color: var(--yellow); /* Ensure you have this color defined in your CSS variables */
+    font-size: 300%; /* Very large text, make sure this is intended */
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif; /* Custom font, ensure it's loaded properly */
+}
+
+/* Flex container to hold items in a column format */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    flex-wrap: wrap;
+    margin-top: 5%;
+    width: 100%; /* Full width of its parent */
+    padding: 0 1rem; /* Padding to prevent content touching the sides */
+}
+
+/* Image styling to ensure they don't exceed container width */
+.firstImage, .secondImage, .thirdImage, .HermiePhoto {
+    max-width: 100%; /* Limits the image width to the container's width */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+/* Heading style inside container */
+.h3 {
+    color: var(--yellow);
+    font-size: 300%; /* Large text, adjust as necessary */
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    margin: 20px 0; /* Space above and below the heading */
+}
+
+/* Paragraph style inside container */
+.p {
+    color: white;
+    font-size: 130%; /* Larger than normal text */
+    text-align: center;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Banner styling */
+.Banner {
+    padding-top: 30%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 2rem; /* Increased padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 3rem; /* Even more padding for very small screens */
+    }
+}

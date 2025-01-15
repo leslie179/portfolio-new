@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'NickySans';
+  src: url('/NickySans-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body {
+  font-family: 'NickySans', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--foreground);
+  background-color: var(--background);
+}
+
+.Footer {
+  background-color: var(--yellow);
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;  /* Vertically center all columns */
+  height: 100%;  /* Ensure container takes full height */
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;  /* Horizontally center content */
+  align-items: center;      /* Vertically center content */
+  font-family: 'NickySans', Arial, Helvetica, sans-serif; /* Ensure font is applied */
+  padding: 0 10px;
+}
+
+.imgColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.imgColumn img {
+  max-width: 200px;
+  height: auto;
+}
+
+.links {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: #000;
+  font-family: 'NickySans', sans-serif;
+  font-size: 23px;
+}
+
+.links a:hover {
+  color: #007bff;
+}
+
+@media (min-width: 769px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .imgColumn {
+    order: 2;
+  }
+
+  .container .column:nth-child(2) {
+    order: 1;
+  }
+
+  .container .column:nth-child(3) {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imgColumn {
+    order: 1;
+  }
+
+  .container .column:nth-child(2) {
+    order: 2;
+  }
+
+  .container .column:nth-child(3) {
+    order: 3;
+  }
+}

@@ -1,0 +1,15 @@
+.Footer {
+    background-color: var(--yellow);
+    padding: 1rem;
+    text-align: center;
+}/* CSS */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 equal columns */
+  gap: 16px; /* Adds spacing between columns */
+}
+.column {
+  background-color: #f0f0f0; /* Optional for visualization */
+  padding: 16px;
+  text-align: center;
+}
