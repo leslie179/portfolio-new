@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from "./HomeProjects.module.css";
-import Banner from "./Banner";
 
 export default function HomeProjects() {
     return (
@@ -32,8 +31,7 @@ export default function HomeProjects() {
                 </a>
             </div>
             {/* Additional separate image for decoration or extra content */}
-            <img className={styles.HermiePhoto} src="/site-photos/leslie-hermier-dog-photo.png" alt="Leslie and Hermie" />
-            <Banner />
+            {/* <img className={styles.HermiePhoto} src="/site-photos/leslie-hermier-dog-photo.png" alt="Leslie and Hermie" /> */}
         </div>
     );
 }
