@@ -1,0 +1,40 @@
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    width: 20%;
+    max-width: 100%; /* Limits the menu width */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center; /* Center items */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.home:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.home:active {
+    color: aqua;
+}
+
+.projects:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.home:active {
+    color: aqua;
+}

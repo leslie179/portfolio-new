@@ -1,0 +1,10 @@
+.HomeProjects {
+    overflow: hidden;
+    position: relative;
+    height: 100vh; /* Adjust based on your design */
+}
+
+.parallaxBlock {
+    transition: transform 0.2s ease-out; /* Smoothens the transition */
+    will-change: transform; /* Optimizes the property to be animated */
+}

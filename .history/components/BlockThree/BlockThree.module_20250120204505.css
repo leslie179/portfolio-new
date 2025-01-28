@@ -1,0 +1,214 @@
+.stickyBlock {
+    position: sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 2; /* Ensure it appears below the next block */
+    background: black;
+    height: 200vh; /* Full viewport height for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+    text-align: center;
+    padding-top: 8%;
+}
+
+/* Heading (h2) style */
+.h2 {
+    color: var(--yellow); /* Ensure your --yellow variable is defined */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem; /* Reduced bottom margin */
+    text-align: center;  
+    justify-content: center;
+}
+
+/* Paragraph (p) style */
+.pp {
+    color: var(--yellow); /* Ensure your --yellow variable is defined */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 400; /* Normal font weight */
+    font-size: 1.1rem; /* Increase font size */
+    margin-bottom: 1.5rem;
+    max-width: 70%; /* Limit text width for better readability */
+    line-height: 1.6; /* Improve text readability */
+    text-align: center;
+    justify-content: center;
+}
+
+/* Styling for Images */
+.stickyBlock img {
+    width: 80%; /* Increase image size for full-screen displays */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 900px; /* Limit max width for very large screens */
+    margin-bottom: 1rem;
+}
+
+.button {
+    background-color: var(--yellow); /* Adjust the color to match your design */
+    color: black; /* Text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Text size */
+    border-radius: 30px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold; /* Bold text */
+    
+    /* White Shadow effect */
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3); /* Horizontal offset, vertical offset, blur radius, and white color with 50% opacity */
+    border: 2px solid white;
+    /* Smooth transition for hover effects */
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.button:hover {
+    /* More pronounced white shadow on hover */
+    transform: rotate(-7deg);
+    color: #1580fb;
+}
+
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .stickyBlock {
+        height: 170vh; /* Slightly smaller height on tablets */
+        padding: 0 3%; /* Reduce padding */
+    }
+
+    .stickyBlock img {
+        width: 90%; /* Adjust image size for smaller screens */
+    }
+
+    .h2 {
+        font-size: 2.5rem; /* Reduce font size for headings */
+    }
+
+    .pp {
+        font-size: 1.3rem; /* Reduce font size for paragraphs */
+        max-width: 90%; /* Adjust text width */
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .stickyBlock {
+        height: 170vh; /* Further reduce height for mobile screens */
+        padding: 0 2%; /* Reduce padding */
+    }
+
+    .stickyBlock img {
+        width: 100%; /* Full width for images on mobile */
+    }
+
+    .h2 {
+        font-size: 2rem; /* Smaller font size for headings */
+    }
+
+    .pp {
+        font-size: 1rem; /* Smaller font size for paragraphs */
+        max-width: 100%; /* Allow full-width text */
+    }
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%; /* Adjust width as necessary */
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+/* Styling for the background image */
+.backgroundImage {
+    position: relative;
+    width: 80%; /* Full width of its container */
+    height: auto;
+    z-index: 1; /* Lower z-index so it stays behind the rotating image */
+}
+
+.flipContainer {
+    position: absolute; /* Position absolutely within the relative parent */
+    top: 20%; /* Center vertically */
+    left: 25%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to perfectly center */
+    width: 300px; /* Set the width according to your image size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Higher z-index to overlap the background image */
+    animation: shake 3s ease-in-out infinite; /* Shake animation */
+}
+
+/* Shake keyframes, rotating left and right */
+@keyframes shake {
+    0%, 100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    75% {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split the container into two columns */
+    align-items: start; /* Align items to the start of each grid cell */
+    gap: 20px; /* Space between columns */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: auto; /* Center the grid in the middle of the page */
+}
+
+.photoGrid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column grid for photos */
+    gap: 10px; /* Space between photos */
+}
+
+.photoGrid img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure photos cover the grid area without distortion */
+}
+
+.textContent {
+    background: #000; /* Dark background for the text section */
+    color: #fff; /* White text for visibility */
+    padding: 20px; /* Padding around text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text content */
+}
+
+.button {
+    background-color: #ffd700; /* Gold/yellow button */
+    color: #000; /* Text color for the button */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text for styling */
+    font-weight: bold; /* Bold font weight */
+    margin-top: 20px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #f0c040; /* Lighter gold/yellow on hover */
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr; /* Stack elements vertically on smaller screens */
+        gap: 15px;
+    }
+
+    .textContent, .photoGrid {
+        order: 1; /* Ensure text content comes first on smaller screens */
+    }
+
+    .photoGrid {
+        order: 2; /* Photos appear after the text */
+    }
+}

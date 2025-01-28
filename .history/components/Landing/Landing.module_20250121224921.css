@@ -1,0 +1,40 @@
+.App {
+    height: 2000px; /* Adds height to the page to allow for scrolling */
+}
+
+.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    font-size: 48px;
+}
+
+.medium {
+    width: 50vw;
+    height: 30vh;
+    font-size: 24px;
+}
+
+/* This ensures there is no horizontal scrollbar */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}

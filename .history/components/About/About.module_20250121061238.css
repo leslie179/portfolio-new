@@ -1,0 +1,91 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    align-items: center; /* Center align items vertically */
+    gap: 20px; /* Space between columns */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: auto; /* Center the grid in the middle of the page */
+    height: 60vh; /* Adjusted height to prevent overflow */
+    overflow: hidden; /* Hides any content that goes outside the bounds */
+}
+
+.imageColumn {
+    position: relative; /* Sets a stacking context */
+    display: flex;
+    justify-content: center; /* Center horizontally within the column */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Use the entire column height */
+    width: 100%; /* Full width */
+}
+
+.baseImage, .topImage {
+    position: absolute;
+    object-fit: cover; /* Ensures images are covered without distortion */
+}
+
+.baseImage {
+    width: 27rem; /* Specific width */
+    height: 18rem; /* Specific height */
+    z-index: 2; /* Lower z-index */
+    transform: rotate(10deg); /* Rotate the image slightly */
+    left: -10%; /* Center more accurately within the column */
+    top: 20%; /* Adjust top position */
+}
+
+.topImage {
+    left: 25%; /* Center on top of the base image */
+    top: 25%; /* Slightly down from the top of the base image */
+    width: 20rem; /* Width to fit over the base image */
+    height: 26rem; /* Height to cover the base image */
+    z-index: 3; /* Ensure this image is on top */
+    transform: rotate(-10deg); /* Rotate opposite to the base image */
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text content */
+    align-items: center; /* Horizontally center the text content */
+    color: #fff; /* White text for visibility */
+    padding: 20px; /* Padding around text */
+    height: 100%; /* Full height to match images */
+}
+
+.h2, .pp {
+    text-align: center;
+    max-width: 100%; /* Ensure text does not exceed the container width */
+}
+
+.h2 {
+    color: var(--yellow); /* Specified yellow color */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem; /* Reduced bottom margin */
+}
+
+.pp {
+    color: white; /* White text for paragraphs */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 400; /* Normal font weight */
+    font-size: 1.1rem; /* Appropriate font size */
+    margin-bottom: 1.5rem;
+    line-height: 1.6; 
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+
+    .textContent, .imageColumn {
+        order: 1; /* Text appears first */
+        width: 100%; /* Full width for both */
+    }
+
+    .imageColumn {
+        order: 2; /* Images follow the text */
+        height: auto; /* Height adjusts to content */
+        padding-top: 10px; /* Adds space between text and images */
+    }
+}

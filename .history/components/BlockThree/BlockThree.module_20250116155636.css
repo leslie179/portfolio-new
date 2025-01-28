@@ -1,0 +1,8 @@
+.scrollingBlock {
+    position: relative; /* Ensures it scrolls relative to the flow */
+    z-index: 3; /* Higher layer than the previous blocks */
+    background: rgba(250, 250, 250, 0.9); /* Slight background for visibility */
+    padding: 20px;
+    height: 100vh; /* Full viewport height */
+    margin-top: 100vh; /* Pushes the block below the previous one */
+}

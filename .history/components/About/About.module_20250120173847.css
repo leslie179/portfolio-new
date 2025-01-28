@@ -1,0 +1,46 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto; /* Adjust based on content size */
+    gap: 10px; /* Spacing between grid items */
+    max-width: 800px; /* Adjust based on your design needs */
+    margin: auto; /* Center the grid container */
+    z-index: 30;
+    margin-top: ;
+}
+
+.imageTop, .imageBottom {
+    width: 100%; /* Full width of their grid cells */
+    display: flex;
+    justify-content: center; /* Center images within their cells */
+}
+
+.imageTop img, .imageBottom img {
+    width: 100%; /* Make images responsive within their containers */
+    max-width: 400px; /* Max width of images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.textContent {
+    background: #000; /* Dark background for the text section */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around text */
+    text-align: center; /* Center text alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center text vertically */
+}
+
+.h1 {
+    margin-bottom: 20px; /* Space between the headline and the paragraph */
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-rows: auto auto auto; /* Stack items vertically on smaller screens */
+    }
+
+    .textContent {
+        padding: 15px; /* Less padding on smaller screens */
+    }
+}

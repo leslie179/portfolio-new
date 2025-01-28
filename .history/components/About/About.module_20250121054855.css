@@ -1,0 +1,66 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    align-items: start; /* Align items to the start of each grid cell */
+    gap: 20px; /* Space between columns */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: auto; /* Center the grid in the middle of the page */
+}
+
+.imageColumn {
+    position: relative; /* Sets a stacking context */
+    height: 20rem; /* Set a fixed height */
+    width: 100%; /* Ensure the container is full width */
+}
+
+.baseImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30rem; /* Adjust width as needed */
+    height: 20rem; /* Adjust height as needed */
+    object-fit: cover;
+    z-index: 2; /* Lower z-index */
+}
+
+.topImage {
+    position: absolute; /* Ensures it's in the same stacking context */
+    left: 50px; /* Offset from the left */
+    top: 60%; /* Offset from the top */
+    width: 50rem; /* Ensure matching width for stacking */
+    height: 20rem; /* Ensure matching height for stacking */
+    opacity: 1;
+    z-index: 3; /* Higher z-index should ensure it is on top */
+}
+
+
+.textContent {
+    background: #000; /* Dark background for the text section */
+    color: #fff; /* White text for visibility */
+    padding: 20px; /* Padding around text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text content */
+}
+
+.h1 {
+    margin-bottom: 20px; /* Space between the headline and the paragraph */
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+
+    .textContent, .imageColumn {
+        padding: 15px;
+    }
+
+    .imageColumn {
+        order: 2; /* Images come after text on smaller screens */
+    }
+
+    .textContent {
+        order: 1; /* Text comes first on smaller screens */
+    }
+}

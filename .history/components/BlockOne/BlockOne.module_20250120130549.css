@@ -1,0 +1,41 @@
+.stickyBlock {
+    position: relative;  /* Change or remove 'sticky' if not needed */
+    top: 0;
+    z-index: 1;
+    background: black;
+    height: auto; /* Changed from 118vh to auto to fit content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 5%;
+    padding-top: 0; /* Reduced or remove top padding if needed */
+    padding-bottom: 5%; /* Reduced bottom padding to lift the content up */
+}
+
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 2%; /* Reduced margin-bottom to decrease space */
+}
+
+/* Continue with existing styles */
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .stickyBlock {
+        padding-top: 0; /* Ensure no extra top padding on smaller screens */
+        padding-bottom: 3%; /* Adjust bottom padding */
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .stickyBlock {
+        padding-top: 0; /* Ensure no extra top padding on mobile */
+        padding-bottom: 2%; /* Adjust bottom padding */
+    }
+}

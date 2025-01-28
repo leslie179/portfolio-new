@@ -1,0 +1,43 @@
+.floatingMenu {
+    position: fixed;  /* Keeps the menu at the top of the viewport */
+    top: 0;
+    left: 50%;         /* Center the menu horizontally */
+    transform: translateX(-50%); /* Aligns the center of the menu with the center of the viewport */
+    width: auto;       /* Adjust width as needed, or use max-width for a specific width */
+    max-width: 80%;    /* Example max-width, adjust as needed */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Adds shadow for better visibility */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;     /* Ensures the menu is above other content */
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.logo span {
+    font-size: 18px;
+    color: orange;
+}
+
+.nav a {
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+}
+
+nav a.active {
+    border-bottom-color: orange;
+}
+
+nav a:hover {
+    border-bottom-color: black;
+}

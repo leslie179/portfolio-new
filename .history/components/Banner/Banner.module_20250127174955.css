@@ -1,0 +1,72 @@
+/* CSS for the Banner Component */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Default height for smaller screens */
+    overflow: hidden;
+}
+
+.bannerSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1; /* Only the active slide is visible */
+}
+
+/* Overlay to darken the image background */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
+    z-index: 2; /* Ensure overlay is above the image but below content */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (min-width: 1440px) {
+    .banner {
+        height: 1000px; /* Larger height for large desktop screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 950px; /* Adjusted for smaller desktops and tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px; /* More adjustment for tablet sizes */
+    }
+
+    .bannerSlide {
+        background-position: top; /* Adjust to focus on the most important part of the image */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 500px; /* Substantially smaller for mobile devices */
+    }
+}
+
+.h2{
+    z-index: 10;
+    position: relative;
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+}

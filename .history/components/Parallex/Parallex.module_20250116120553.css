@@ -1,0 +1,10 @@
+.parallaxContainer {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/path-to-your-background-image.jpg');
+    background-attachment: fixed;
+  }
+  

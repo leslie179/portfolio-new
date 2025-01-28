@@ -1,0 +1,88 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    height: 63vh;
+    top: -100%;
+}
+
+.imageColumn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.baseImage, .topImage {
+    position: absolute;
+    object-fit: cover;
+}
+
+.baseImage {
+    width: 23rem;
+    height: 16rem;
+    z-index: 2;
+    transform: rotate(7deg);
+    left: 2.5%;
+    top: 20%;
+}
+
+.topImage {
+    top: 60%;
+    width: 20rem;
+    z-index: 3;
+    transform: rotate(-10deg);
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    height: 100%;
+}
+
+.h2, .pp {
+    text-align: center;
+}
+
+.h2 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.pp {
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .textContent {
+        width: 100%;
+        order: 1;
+    }
+
+    .imageColumn {
+        order: 2;
+    }
+}

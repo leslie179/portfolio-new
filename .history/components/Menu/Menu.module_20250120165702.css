@@ -1,0 +1,58 @@
+/* CSS for the Menu component */
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Center the menu horizontally relative to the viewport */
+    transform: translateX(-50%); /* Align the center of the menu with the center of the viewport */
+    width: 20%; /* Fixed width of the menu */
+    max-width: 100%; /* Ensures the menu does not exceed the width of the viewport */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Shadow for depth */
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    margin-top: 6%;
+    border-radius: 50px;
+}
+
+.img {
+    width: 60px;
+    margin-right: 7%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    color: orange; /* Default text color */
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent; /* Transparent border that changes on hover */
+}
+
+.nav a.active, .nav a:active {
+    color: #FF4800; /* Orange text when active */
+    border-bottom: 3px solid #FF4800; /* Orange underline */
+}
+
+
+.nav a:hover {
+    color: #FF4800; /* Hover text color */
+    border-bottom: 3px solid #FF4800; /* Hover underline color */
+}
+
+.home {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.home:hover {
+    color: #FF4800; /* Ensure the hash is included for hexadecimal color */
+}

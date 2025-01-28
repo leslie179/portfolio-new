@@ -1,0 +1,42 @@
+/* General styles for the floating menu */
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.logo span {
+    font-size: 18px;
+    color: orange;
+}
+
+.nav a {
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a.active {
+    border-bottom-color: orange;
+}
+
+.nav a:hover {
+    border-bottom-color: black;
+}

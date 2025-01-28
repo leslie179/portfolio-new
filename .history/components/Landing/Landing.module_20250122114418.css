@@ -1,0 +1,18 @@
+.container {
+    height: 150vh; /* Example height */
+  }
+  
+  #textBox {
+    transition: all 2s ease-in-out;
+  }
+  
+  h1, h2 {
+    font-size: 2rem;
+  }
+  
+  .pin-wrap h2 {
+    font-size: 3rem; /* Increase font size as it scrolls */
+  }
+  
+  /* Ensure other CSS properties are correctly applied */
+  

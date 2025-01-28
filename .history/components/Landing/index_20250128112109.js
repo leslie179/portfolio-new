@@ -1,0 +1,1 @@
+gsap.to(".gsap-spinner-confetti.tada")

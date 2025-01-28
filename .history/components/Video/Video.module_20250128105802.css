@@ -1,0 +1,255 @@
+.container{
+    background-color: var(--beige);
+}
+
+.h2{
+    color: black;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+}
+
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column; /* Stack the video and button vertically */
+    align-items: center; /* Center children horizontally in the container */
+    justify-content: center; /* Center children vertically in the container */
+    height: 100%; /* Take full height of its parent or adjust as necessary */
+}
+
+@media (max-width: 768px) {
+    .h2 {
+        font-size: 2.5rem;
+    }
+
+    .pp {
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .h2 {
+        font-size: 2rem;
+    }
+
+    .pp {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+
+.container{
+    background-color: var(--beige);
+}
+
+.h2{
+    color: black;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 5%;
+}
+
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}
+
+.videoContainer {
+    display: flex;
+    flex-direction: column; /* Stack the video and button vertically */
+    align-items: center; /* Center children horizontally in the container */
+    justify-content: center; /* Center children vertically in the container */
+    height: 100%; /* Take full height of its parent or adjust as necessary */
+}
+
+@media (max-width: 768px) {
+    .h2 {
+        font-size: 2.5rem;
+    }
+
+    .pp {
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .h2 {
+        font-size: 2rem;
+    }
+
+    .pp {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
+
+
+
+.animationDemo{
+    text-align: center;
+    margin: 30px;
+    font-size: 1.25em;
+  }
+  .animationButton{
+    border: 1px solid red;
+    border-radius:30px;
+    padding: 1em;
+    margin: 0 0.75em;
+    transition: all ease 0.3s;
+    z-index: 2;
+    background: white;
+    position: relative;
+  }
+
+  .animationButton:hover{
+    border-color: hotpink;
+    color: hotpink;
+  }
+
+  .animationConfetti{
+    position: absolute;
+    left:50%;
+    top:0%;
+    z-index: -1;
+    opacity: 0;
+}
+
+.animationButton:hover .animationConfetti{
+    animation: confettionConfetti 2s ease 1 normal;
+}
+
+.animationButton:hover .Tree{
+    animation: confettionConfetti 2s ease 1 normal;
+}
+
+.animationButton:hover .Ok{
+    animation: confettionConfetti 2s ease 1 normal;
+}
+
+@keyframes confettionConfetti {
+    0% {
+        left: 25px;
+        opacity:0;
+    }
+    20%{
+        top: -35px;
+        transform:rotate(28deg);
+        opacity: 100%;
+    }
+    50%{
+        left:-15px;
+    }
+    100%{
+        opacity:0%;
+        top:0%;
+        left:-15px;
+    }
+}
+
+
+@keyframes moreConfetti {
+    0% {
+        
+        opacity:0;
+    }
+    30%{
+        top: -45px;
+        left:75%;
+        opacity: 100%;
+    }
+    60%{
+        left:80px;
+    }
+    100%{
+        transform:rotate(60deg);
+        opacity:0%;
+        top:0%;
+        left:85%;
+    }
+}
+
+@keyframes evenMoreConfetti {
+    0% {
+        
+        opacity:0;
+    }
+    30%{
+        top: -75px;
+        
+        opacity: 100%;
+    }
+    60%{
+        left:60%;
+    }
+    100%{
+        transform:rotate(60deg);
+        opacity:0%;
+        top:-5px;
+        left:65%;
+    }
+}
+
+
+.spinner-confetti{
+    font-size: 75px;
+    position:absolute;
+    animation: rotate 3s ease infinite;
+}
+
+.spinner-confetti

@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem;
+    min-height: 20vh;
+  }
+  
+  .animation-demo{
+    text-align: center;
+    margin: 30px;
+    font-size: 1.25em;
+  }
+  .animation-button{
+    border: 1px solid red;
+    border-radius:30px;
+    padding: 1em;
+    margin: 0 0.75em;
+    transition: all ease .3s;
+    
+    
+  }
+
+  

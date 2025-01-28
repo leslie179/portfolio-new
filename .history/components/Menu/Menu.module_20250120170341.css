@@ -1,0 +1,47 @@
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    width: 19%;
+    max-width: 100%; /* Limits the menu width */
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center; /* Center items */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 5%;
+}
+
+.img {
+    width: 60px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.home{
+    margin-left: 4%;
+    margin-right: 10%;
+}
+
+.home:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.home:active {
+    color: aqua;
+}
+
+.projects:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.projects:active {
+    color: aqua;
+}

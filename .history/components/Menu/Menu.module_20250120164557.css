@@ -1,0 +1,60 @@
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Centers the menu horizontally relative to the viewport */
+    transform: translateX(-50%); /* Correctly aligns the center of the menu with the viewport's center */
+    width: 40%; /* You can set this to a specific value if you want */
+    max-width: 80%; /* Limits the menu width while allowing for responsive adjustments */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Adds shadow for depth */
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+.logo , .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img{
+    width:60px;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-right: 20px; /* Adds spacing between the logo and navigation links */
+}
+
+.logo .span {
+    font-size: 18px;
+    color: orange;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 10px; /* Spacing between links */
+    border-bottom: 3px solid transparent; /* For hover effect */
+}
+
+.nav a.active {
+    border-bottom-color: orange;
+}
+
+.nav a:hover {
+    border-bottom-color: black;
+}

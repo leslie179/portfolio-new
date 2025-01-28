@@ -1,0 +1,7 @@
+.scrollingBlock {
+    position: relative;
+    z-index: 3; // Ensure it's above previous blocks
+    background: rgba(250, 250, 250, 0.9);
+    padding: 20px;
+    height: 100vh;
+}

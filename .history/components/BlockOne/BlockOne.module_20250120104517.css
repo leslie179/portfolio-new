@@ -1,0 +1,86 @@
+.container {
+    text-align: center;
+    background: black;
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    padding: 0 5%;
+}
+
+.h1 {
+    font-weight: 900;
+    font-size: 2.8rem;
+    color: var(--yellow);
+    padding-top: 5%;
+    
+}
+
+.stickyBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Split into two equal columns */
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 20px;
+}
+
+.imageSection img {
+    width: 100%; /* Adjust the width as necessary */
+    height: auto;
+    max-width: 600px; /* You can adjust this value */
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to the start */
+    padding: 0 2rem;
+}
+
+.h2, .pp {
+    color: var(--yellow);
+}
+
+.h2 {
+    font-weight: 900;
+    font-size: 2.4rem;
+    margin: 0.5rem 0;
+}
+
+.pp {
+    font-weight: 400;
+    font-size: 1.5rem;
+    max-width: 80%;
+    line-height: 1.6;
+}
+
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .stickyBlock {
+        grid-template-columns: 1fr; /* Stack image and text vertically on smaller screens */
+    }
+
+    .textSection, .imageSection {
+        padding: 1rem;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .h2, .pp {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 8px 16px;
+    }
+}

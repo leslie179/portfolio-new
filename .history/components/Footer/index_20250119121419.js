@@ -1,0 +1,69 @@
+.Footer {
+    position: relative;
+    z-index: 10;
+    background-color: yellow; /* Footer background */
+    padding: 50px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%); /* Creates the slanted effect */
+    margin-top: 2rem;
+}
+
+.banner {
+    position: absolute;
+    top: -50px; /* Moves banner to overlap the footer slightly */
+    width: 100%;
+    height: 50px; /* Height of the banner */
+    overflow: hidden; /* Hides content outside the banner */
+    background-color: black; /* Banner background */
+}
+
+.bannerContent {
+    display: inline-block;
+    white-space: nowrap; /* Prevents text wrapping */
+    animation: scrollText 10s linear infinite; /* Creates the scrolling animation */
+}
+
+.bannerContent span {
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+}
+
+/* Scrolling animation */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+    }
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 60px; /* Space below the banner */
+}
+
+.imgColumn img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.column {
+    text-align: center;
+}
+
+.links a {
+    display: block;
+    margin: 0.5rem 0;
+    color: black;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #007bff;
+}

@@ -1,0 +1,48 @@
+/* HomeProjects.module.css */
+.container {
+    position: relative;
+    height: 60vh;  /* Adjust based on your layout needs */
+    overflow-x: hidden;
+    overflow-y: scroll;  /* Allows the container to scroll */
+}
+
+.container::-webkit-scrollbar {
+    display: none;  /* Hides scrollbar for Chrome, Safari, and Opera */
+}
+
+.HomeProjects{
+    height: 3000px;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 60%;
+}
+
+.parallax img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    
+}
+
+.parallax h2{
+    display: flex;
+    text-align: center;
+}
+
+.img{
+    z-index: 0;
+    height: 20%;
+}
+
+.img1{
+    z-index: 3;
+}

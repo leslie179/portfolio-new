@@ -1,0 +1,30 @@
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 19%;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    border-radius: 50px;
+    margin-top: 5%;
+}
+
+.img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: orange;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 10px;
+}

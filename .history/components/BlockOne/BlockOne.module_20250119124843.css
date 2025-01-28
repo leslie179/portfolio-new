@@ -1,0 +1,9 @@
+.stickyBlock {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    padding: 20px;
+    height: 70vh;
+    justify-content: center;
+}

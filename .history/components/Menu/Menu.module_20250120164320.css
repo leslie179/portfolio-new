@@ -1,0 +1,16 @@
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; /* Centers the menu horizontally relative to the viewport */
+    transform: translateX(-50%); /* Correctly aligns the center of the menu with the viewport's center */
+    width: auto; /* You can set this to a specific value if you want */
+    max-width: 80%; /* Limits the menu width while allowing for responsive adjustments */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Adds shadow for depth */
+    display: flex;
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-sizing: border-box;
+}

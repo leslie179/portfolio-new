@@ -1,0 +1,60 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    align-items: start; /* Align items to the start of each grid cell */
+    gap: 20px; /* Space between columns */
+    max-width: 1200px; /* Maximum width of the grid */
+    margin: auto; /* Center the grid in the middle of the page */
+}
+
+.imageColumn {
+    position: relative; /* Relative positioning for absolute child elements */
+    height: 500px; /* Set a fixed height or adjust based on content */
+}
+
+.baseImage {
+    position: absolute; /* Absolute positioning for overlap */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Ensure photos cover the area */
+    min-width: 60;
+}
+
+.topImage {
+    left: 50px; /* Adjust left position to create overlap effect */
+    top: 60%; /* Adjust top position to create overlap effect */
+    opacity: 1; /* Optional: makes the image slightly see-through */
+}
+
+.textContent {
+    background: #000; /* Dark background for the text section */
+    color: #fff; /* White text for visibility */
+    padding: 20px; /* Padding around text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center the text content */
+}
+
+.h1 {
+    margin-bottom: 20px; /* Space between the headline and the paragraph */
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        grid-template-columns: 1fr; /* Stack columns vertically on smaller screens */
+    }
+
+    .textContent, .imageColumn {
+        padding: 15px;
+    }
+
+    .imageColumn {
+        order: 2; /* Images come after text on smaller screens */
+    }
+
+    .textContent {
+        order: 1; /* Text comes first on smaller screens */
+    }
+}

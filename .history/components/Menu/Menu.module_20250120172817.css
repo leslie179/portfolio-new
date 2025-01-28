@@ -1,0 +1,50 @@
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+    .floatingMenu {
+        width: 50%;  /* Increase width for better visibility on tablets */
+        font-size: 16px;  /* Adjust font size for better readability */
+    }
+
+    .img {
+        width: 50px;  /* Slightly smaller image size */
+        margin-right: 15px;
+    }
+
+    .nav a {
+        padding: 8px 14px;  /* Slightly smaller padding */
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 480px) {
+    .floatingMenu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;  /* Full width for mobile devices */
+        transform: none;  /* Remove transformation because full width */
+        flex-direction: column;  /* Stack elements vertically */
+        padding: 10px 0;  /* Reduce padding */
+    }
+
+    .img {
+        margin: 0 auto;  /* Center the logo */
+        display: block;  /* Ensure the image is a block to center properly */
+        width: 45px;  /* Even smaller image on mobile */
+    }
+
+    .nav {
+        width: 100%;  /* Full width for nav links */
+        display: flex;
+        flex-direction: column;  /* Stack links vertically */
+        align-items: center;  /* Center links */
+    }
+
+    .nav a {
+        width: 100%;  /* Full width links for easier tap targets */
+        text-align: center;  /* Center text */
+        margin: 5px 0;  /* Add some vertical spacing */
+        padding: 10px;  /* Larger padding for easier tapping */
+    }
+}

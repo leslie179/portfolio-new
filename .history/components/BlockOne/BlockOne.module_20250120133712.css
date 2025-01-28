@@ -1,0 +1,111 @@
+.stickyBlock {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: black;
+    height: 118vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+    padding: 0 5%;
+    padding-bottom: 15%;
+}
+
+.spacer {
+    
+    height: 10%; /* Adjust the height to control the space */
+}
+
+.h1{
+    color: var(--yellow); /* Ensure your --yellow variable is defined */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900; /* Bold weight */
+    font-size: 2.8rem; /* Increase font size */
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+/* Heading (h2) style */
+.h2 {
+     color: var(--yellow); /* Ensure your --yellow variable is defined */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem; /* Reduced bottom margin */
+    text-align: center;  
+}
+
+.button {
+    background-color: var(--yellow);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 30px;
+    border-color: white;
+    border
+}
+
+/* Paragraph (p) style */
+.pp {
+    color: var(--yellow); /* Ensure your --yellow variable is defined */
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 400; /* Normal font weight */
+    font-size: 1.5rem; /* Increase font size */
+    margin: 1rem 0;
+    max-width: 80%; /* Limit text width for better readability */
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Styling for Images */
+.stickyBlock img {
+    width: 80%; /* Increase image size for full-screen displays */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 900px; /* Limit max width for very large screens */
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .stickyBlock {
+        height: 120vh; /* Slightly smaller height on tablets */
+        padding: 0 3%; /* Reduce padding */
+    }
+
+    .stickyBlock img {
+        width: 90%; /* Adjust image size for smaller screens */
+    }
+
+    .h2 {
+        font-size: 2rem; /* Reduce font size for headings */
+    }
+
+    .pp {
+        font-size: 1.3rem; /* Reduce font size for paragraphs */
+        max-width: 90%; /* Adjust text width */
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .stickyBlock {
+        height: 120vh; /* Further reduce height for mobile screens */
+        padding: 0 2%; /* Reduce padding */
+    }
+
+    .stickyBlock img {
+        width: 100%; /* Full width for images on mobile */
+    }
+
+    .h2 {
+        font-size: 2rem; /* Reduce font size for headings */
+    }
+
+    .pp {
+        font-size: 1rem; /* Smaller font size for paragraphs */
+        max-width: 100%; /* Allow full-width text */
+    }
+}
