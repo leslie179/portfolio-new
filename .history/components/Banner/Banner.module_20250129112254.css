@@ -1,0 +1,133 @@
+/* Main banner container */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Default height for smaller screens */
+    overflow: hidden;
+    background-color: black; /* Set background color to black */
+}
+
+/* Each slide in the banner */
+.bannerSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+   
+    opacity: 0; /* Start with hidden */
+}
+
+.active {
+    opacity: 1;
+}
+
+/* Overlay to darken the images slightly */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2;
+}
+
+/* Container to center the text over the images */
+.parentContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Above the overlay and images */
+    pointer-events: none; /* Allow clicks to pass through */
+    flex-direction: column;
+}
+
+/* Styling for the centered heading */
+.h2 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 4rem; /* Default font size */
+    text-align: center;
+    pointer-events: auto; /* Enable text to be selectable or clickable */
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 2%;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 1440px) {
+    .banner {
+        height: 1000px; /* Larger height for large desktop screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 950px; /* Adjusted height for smaller desktops and tablets */
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.6); /* Darker for smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px; /* Smaller height for tablet sizes */
+    }
+    .bannerSlide {
+        background-position: top; /* Focus on the most relevant part of the image */
+    }
+    .h2 {
+        font-size: 2rem; /* Smaller font size for tablet screens */
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7); /* Even darker for visibility */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 500px; /* Adjusted height for mobile devices */
+    }
+    .h2 {
+        font-size: 2rem;
+        padding-left:7%;
+        padding-right: 7%; /* Even smaller font size for mobile screens */
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.8); /* Maximum opacity for best readability on small devices */
+    }
+}
+
+
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 8%;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 50;
+    padding-top: 10%;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}

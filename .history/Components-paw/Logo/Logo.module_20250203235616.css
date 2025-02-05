@@ -1,0 +1,26 @@
+/* BrandComponent.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row; /* Set flex direction to row by default */
+}
+
+.logo img {
+    width: auto;
+    height: 150px;
+    margin-right: 20px; /* Adjust spacing if needed */
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing on smaller screens */
+    }
+}
+

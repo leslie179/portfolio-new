@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row; /* Ensures row layout by default */
+}
+
+.logo img {
+    width: auto;
+    height: 150px; /* Consistent size for the logo */
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.text {
+    max-width: 600px; /* Optimal text width for readability */
+    padding: 20px; /* Adequate padding around text */
+    font-size: 1rem;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .logo img {
+        height: 100px; /* Adjust logo size for smaller screens */
+        margin-right: 0; /* Remove right margin on smaller screens */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .text {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+        padding: 10px; /* Reduced padding */
+    }
+}

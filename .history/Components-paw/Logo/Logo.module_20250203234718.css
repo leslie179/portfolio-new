@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row; /* Default to row for larger screens */
+}
+
+.logo img {
+    width: auto;
+    height: 150px; /* Maintain consistent size */
+    margin: 20px; /* Add margin for spacing */
+}
+
+.text {
+    max-width: 600px; /* Restrict text width for better readability */
+    padding: 20px; /* Padding for text for better spacing */
+    font-size: 1rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change to column layout on smaller screens */
+    }
+
+    .logo img {
+        height: 100px; /* Optionally resize the logo for smaller screens */
+        margin: 10px; /* Reduce margin for smaller layout */
+    }
+
+    .text {
+        font-size: 0.9rem; /* Optionally reduce font size on smaller screens */
+        padding: 10px; /* Reduce padding for text on smaller screens */
+    }
+}

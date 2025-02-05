@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust based on preference */
+    max-width: 1200px; /* Maximum width */
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F25E63; /* Cherry sorbet */
+}
+
+.tagline, .right p {
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+}

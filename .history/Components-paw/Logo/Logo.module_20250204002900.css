@@ -1,0 +1,61 @@
+/* BrandComponent.module.css */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2.5fr 2fr; /* Balance space around the logo */
+    grid-template-areas:
+        "text1 logo text2";
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    color: white;
+    background-color: var(--foreground);
+    text-align: center;
+   
+   padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.h1{
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.text {
+    max-width: 100%; /* Allow text to use up the space it needs */
+    font-size: 1rem;
+    padding: 0 10px; /* Add padding for some breathing space */
+    display: flex;
+    justify-content: center; /* Center text contents */
+    align-items: center; /* Vertically align text contents */
+    text-align: center;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center; /* Center logo */
+    align-items: center;
+    padding-left: -30%;
+}
+
+.logo img {
+    width: 800px;
+    max-width: 1000px; /* Adjust logo size */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 30%;
+        grid-template-columns: 1fr; /* Stack vertically on smaller screens */
+        grid-template-areas:
+            "text1"
+            "logo"
+            "text2";
+    }
+}

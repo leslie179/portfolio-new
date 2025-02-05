@@ -1,0 +1,49 @@
+/* BrandComponent.module.css */
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr; /* Three columns for larger screens */
+    grid-template-rows: auto; /* Single row for larger screens */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.logo {
+    grid-area: logo; /* Assign grid area for the logo */
+}
+
+.text:first-child {
+    grid-area: text1; /* Assign grid area for the first paragraph */
+}
+
+.text:last-child {
+    grid-area: text2; /* Assign grid area for the second paragraph */
+}
+
+.logo img {
+    max-width: 300px; /* Control the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Responsive width */
+}
+
+.text {
+    max-width: 600px; /* Control width for readability */
+    font-size: 1rem; /* Font size */
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+        grid-template-rows: auto auto auto; /* Three rows for smaller screens */
+        gap: 10px; /* Smaller gap on smaller screens */
+    }
+
+    .logo, .text {
+        grid-area: unset; /* Reset grid area placements for smaller screens */
+    }
+}

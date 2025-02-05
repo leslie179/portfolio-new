@@ -1,0 +1,8 @@
+.header{
+    background-image: url('site-photos-paw/store');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}

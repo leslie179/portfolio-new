@@ -1,0 +1,35 @@
+/* BrandComponent.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex-direction: row; /* Set flex direction to row by default */
+}
+
+.logo img {
+    width: auto;
+    height: 150px;
+    margin-right: 20px; /* Space between the logo and the text */
+}
+
+.text {
+    max-width: 600px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Change flex direction to column on smaller screens */
+    }
+
+    .logo img {
+        margin-right: 0; /* Remove margin-right on smaller screens */
+        margin-bottom: 20px; /* Add margin-bottom for spacing */
+    }
+}

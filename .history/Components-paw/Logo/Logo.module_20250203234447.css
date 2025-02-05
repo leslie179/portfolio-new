@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: black; /* Adjust the background color as necessary */
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100%; /* Adjust width to fit content area */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Limit the size for larger displays */
+    margin-bottom: 20px; /* Space between logo and text */
+}
+
+.text {
+    max-width: 90%; /* Limit the text width on larger screens */
+    font-size: 1rem; /* Adjust font size as necessary */
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+    }
+}

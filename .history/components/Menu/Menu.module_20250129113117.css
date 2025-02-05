@@ -1,0 +1,86 @@
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); /* Centers the menu at the top */
+    width: 20%; /* Adjust width as needed */
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo and navigation space */
+    gap: 10px; /* Space between logo and navigation */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px;
+    z-index: 10000;
+    border-radius: 30px;
+    margin-top: 5%;
+    transition: top 0.6s;
+}
+
+.hidden {
+    top: -100%; /* Hide the menu when not needed */
+}
+
+.img {
+    width: 60px; /* Adjust size according to your design */
+    justify-self: start; /* Align logo to the start of its grid area */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Equal width for each nav item */
+    justify-content: end; /* Align navigation items to the end of their grid area */
+    text-align: center;
+}
+
+.home, .projects {
+    padding: 5px 10px; /* Padding for clickable area */
+    cursor: pointer;
+}
+
+.home:hover, .projects:hover {
+    color: #FF4800;
+    text-decoration: underline;
+}
+
+.home:active, .projects:active {
+    color: #FF4800;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .floatingMenu {
+        width: 70%; /* Wider on smaller screens */
+    }
+
+    .img {
+        width: 45px; /* Smaller logo on smaller screens */
+    }
+
+    .home, .projects {
+        font-size: 16px; /* Larger font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .floatingMenu {
+        width: 100%; /* Full width on very small screens */
+        top: 0; /* Adjust top on mobile */
+        padding: 10px; /* Less padding */
+        grid-template-columns: 50px 1fr; /* Adjust the logo and navigation ratio */
+    }
+
+    .img {
+        justify-self: center; /* Center logo when menu is full width */
+    }
+
+    nav {
+        grid-template-columns: 1fr; /* Stack navigation items on small screens */
+        gap: 0; /* Remove gap */
+    }
+
+    .home, .projects {
+        text-align: center; /* Ensure text is centered */
+        font-size: 14px; /* Smaller font size */
+    }
+}

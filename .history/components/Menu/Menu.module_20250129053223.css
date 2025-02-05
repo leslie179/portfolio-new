@@ -1,0 +1,74 @@
+/* Base styles */
+.floatingMenu {
+    position: fixed;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 16.5%;
+    max-width: 100%; 
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 10000;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin-top: 5%;
+    transition: top 0.6s;
+}
+
+.hidden {
+    top: -100%; 
+}
+
+.img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.home, .projects {
+    margin-left: 4%;
+    margin-right: 10%;
+}
+
+.home:hover, .projects:hover {
+    color: #FF4800;
+    text-decoration: underline;
+}
+
+.home:active, .projects:active {
+    color: #FF4800;
+}
+
+/* Media Queries */
+/* For tablets */
+@media (max-width: 768px) {
+    .floatingMenu {
+        width: 50%; /* Increased width for tablets */
+    }
+    .img {
+        width: 45px; /* Slightly smaller logo */
+    }
+    .home, .projects {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .floatingMenu {
+        width: 60%; /* Significantly increase width for mobile */
+        padding: 8px 10px; /* Adjust padding to save space */
+        border-radius: 30px; /* Soften the corners a bit more */
+    }
+    .img {
+        width: 35px; /* Smaller logo for mobile */
+    }
+    .home, .projects {
+        font-size: 14px; /* Smaller font size to fit the increased number of items */
+        margin-left: 2%;  /* Reduce margin */
+        margin-right: 4%;
+    }
+}

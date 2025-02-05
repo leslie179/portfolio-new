@@ -1,0 +1,58 @@
+/* Main banner container */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+/* Each slide in the banner */
+.bannerSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Start with hidden */
+}
+
+/* Active slide */
+.active {
+    opacity: 1;
+    transition: opacity 0s; /* Immediate transition */
+}
+
+/* Overlay to darken the images slightly */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2;
+}
+
+.h2 {
+    color: var();
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-right: 40%;
+    padding-left: 1%;
+    padding-bottom: 3%;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end; /* Aligns children (text) at the bottom */
+    justify-content: center; /* Centers children horizontally */
+    height: 100%; /* Ensure the flex container is full height */
+    z-index: 10000;
+    position: absolute;
+    bottom: 0; /* Positions the .h2 element at the bottom of its positioned ancestor */
+    left: 0;
+    width: 100%; /* Takes full width to ensure centering works over the whole line */
+}

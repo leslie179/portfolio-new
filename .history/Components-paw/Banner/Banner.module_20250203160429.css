@@ -1,0 +1,14 @@
+.headerContainer{
+    background-image: url('/site-photos-paw/Store.png'); /* Use a path relative to the root */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+.h1{
+    bottom: 20%;
+    position: absolute;
+    
+}

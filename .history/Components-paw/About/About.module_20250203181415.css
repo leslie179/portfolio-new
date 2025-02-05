@@ -1,0 +1,28 @@
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    margin-bottom: 0.5em; /* Adjusted space */
+    text-align: center;
+    margin-bottom: -.1;
+}
+
+.p {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-top: 0.5em; /* Adjusted space */
+    max-width: 70%;
+    line-height: 1.6;
+    text-align: center;
+}

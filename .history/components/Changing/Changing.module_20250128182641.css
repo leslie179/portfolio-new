@@ -1,0 +1,74 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.bannerSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    display: block;
+}
+
+.left, .right, .full {
+    width: 100%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 0;
+}
+
+.full {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+    .left, .right {
+        width: 50%;
+    }
+
+    .right {
+        left: 50%;
+    }
+}
+
+.h2 {
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 3.6rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding-left: 11%;
+    
+    display: flex;
+    align-items: flex-end; /* Aligns children (text) at the bottom */
+    justify-content: center; /* Centers children horizontally */
+    height: 100%; /* Ensure the flex container is full height */
+    z-index: 10000;
+    position: absolute;
+    bottom: 0; /* Positions the .h2 element at the bottom of its positioned ancestor */
+    left: 0;
+    width: 100%; /* Takes full width to ensure centering works over the whole line */
+}

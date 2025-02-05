@@ -1,0 +1,72 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Adjust height as needed */
+    overflow: hidden;
+    background-color: black; /* Ensures a black background if images load slowly */
+}
+
+/* Each slide in the banner */
+.bannerSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* Start with hidden */
+    transition: opacity 0s; /* Immediate transition */
+}
+
+/* Active slide */
+.active {
+    opacity: 1;
+}
+
+/* Overlay to darken the images slightly */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
+    z-index: 1000000; /* Ensures overlay is above the image but below content */
+}
+
+/* Container to center the text over the images */
+.parentContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3; /* Above the overlay and images */
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.h2 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-right: 40%;
+    padding-left: 1%;
+    padding-bottom: 3%;
+    line-height: 120%;
+    display: flex;
+    align-items: flex-end; /* Aligns children (text) at the bottom */
+    justify-content: center; /* Centers children horizontally */
+    height: 100%; /* Ensure the flex container is full height */
+    z-index: 10000;
+    position: absolute;
+    bottom: 0; /* Positions the .h2 element at the bottom of its positioned ancestor */
+    left: 0;
+    width: 100%; /* Takes full width to ensure centering works over the whole line */
+}

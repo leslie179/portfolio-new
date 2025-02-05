@@ -1,0 +1,54 @@
+.floatingMenu {
+    position: fixed;
+    top: 20px; /* Adjust based on your design preference */
+    left: 50%; /* Starts at the horizontal center */
+    transform: translateX(-50%); /* Ensures it's perfectly centered on all devices */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    padding: 10px 20px;
+    border-radius: 20px;
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.img {
+    width: 40px; /* Adjust the size of your logo if necessary */
+    margin-right: 10px; /* Space between logo and menu items */
+}
+
+.home, .projects {
+    color: black; /* Adjust as necessary */
+    text-decoration: none; /* Removes underline */
+    margin: 0 15px; /* Even spacing around links */
+}
+
+.home:hover, .projects:hover {
+    color: #FF4800; /* Highlight color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    .floatingMenu {
+        top: 10px; /* Less margin from the top on smaller devices */
+        padding: 5px 10px; /* Less padding on smaller devices */
+        width: 95%; /* More width to accommodate smaller screens */
+        border-radius: 10px; /* Less pronounced border-radius on small screens */
+    }
+
+    .home, .projects {
+        font-size: 0.8rem; /* Smaller font size on small screens */
+    }
+
+    .img {
+        width: 30px; /* Smaller logo on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .floatingMenu {
+        width: 90%; /* Adjust width for very small devices */
+        top: 5px; /* Closer to the top edge */
+    }
+}

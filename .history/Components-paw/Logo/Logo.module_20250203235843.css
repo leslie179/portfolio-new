@@ -1,0 +1,31 @@
+/* BrandComponent.module.css */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* logo takes 1 fraction of space, text takes 2 fractions */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+    text-align: center;
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+.logo img {
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 300px; /* Maximum width of the logo */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.text {
+    max-width: 600px; /* Limit text width for readability */
+    font-size: 1rem; /* Adjustable font size */
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        gap: 10px; /* Reduce the gap for smaller screens */
+    }
+}

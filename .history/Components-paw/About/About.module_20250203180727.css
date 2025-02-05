@@ -1,0 +1,30 @@
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.8rem;
+    line-height: 2rem;
+    text-align: center;  /* Center text horizontally */
+}
+
+.p {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 70%;
+    line-height: 1.6;
+    text-align: center;  /* Center text horizontally */
+    margin-left: auto;   /* Center the block element if needed */
+    margin-right: auto;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;  /* Align children vertically */
+    align-items: center;     /* Center children horizontally within the container */
+    justify-content: center; /* Center children vertically within the container */
+    height: 100vh;           /* Optional: full height of the viewport */
+    width: 100%;             /* Optional: full width of the container */
+}

@@ -1,0 +1,41 @@
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 8%;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}
+
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 8%;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}
