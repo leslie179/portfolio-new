@@ -10,7 +10,9 @@ const BlockOne = () => {
             
             <h2 className={styles.h2}>Candl</h2>
             <p className={styles.pp}>This project is about innovating candle design and marketing strategies.</p>
-            <button className={styles.button}>VIEW PROJECT</button>
+            <a href="/candl" target="_blank" rel="noopener noreferrer">
+                <button className={styles.button}>VIEW PROJECT</button>
+            </a>
         </div>
     );
 };

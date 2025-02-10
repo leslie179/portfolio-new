@@ -8,11 +8,11 @@ const Others = () => {
         <div className={styles.wrapper}>
           <img
             className={styles.img2}
-            src="/site-photos-wellness/sticker-notebook.jpg"
+            src="/site-photos-paw/paw-sticker.jpg"
             alt="mug"
             loading="lazy"
           />
-          <a href="/wellness-journey" target="_blank" rel="noopener noreferrer">
+          <a href="/pawbypaw" target="_blank" rel="noopener noreferrer">
                 <button className={styles.button}>VIEW PROJECT</button>
             </a>
         </div>
