@@ -1,0 +1,36 @@
+.h1{
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+   padding-left: 10%;
+   padding-right: 10%;
+    gap:15%;
+    width: 40
+    
+}
+
+.img2 {
+    width: 40%; /* Keeps each child at half of the container's width */
+    object-fit:fill; 
+    padding-right: 6px;
+    padding-bottom: 6px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.img5{
+    width: 40%; /* Keeps each child at half of the container's width */
+    object-fit: fill; 
+    padding-right: 6px;
+    padding-bottom: 6px;
+}

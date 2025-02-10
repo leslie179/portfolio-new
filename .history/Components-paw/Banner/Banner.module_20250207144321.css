@@ -1,0 +1,126 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/Store.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+}
+
+/* Base button style */
+.buttonStyle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* First Button */
+.yellowBlackButton {
+    left: 40%;
+    top: 30%;
+}
+
+/* Second Button */
+.yellowBlackButton1 {
+    left: 80%;
+    top: 30%;
+}
+
+/* Third Button - New One */
+.yellowBlackButton2 {
+    left: 60%;
+    top: 60%;
+}
+
+.buttonStyle::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #2F2F2F; /* Dark inner circle */
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Make buttons visible when hovering over container */
+.headerContainer:hover .buttonStyle {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* White Box Style */
+.whiteBox {
+    width: 300px;
+    height: 150px;
+    background-color: beige;
+    position: absolute;
+    left: 20%;
+    top: 33%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+/* Second White Box */
+.whiteBox1 {
+    left: 70%; /* Adjusted for the second button */
+    top: 33%;
+}
+
+/* Third White Box - New One */
+.whiteBox2 {
+    left: 50%;
+    top: 63%;
+}
+
+/* Show corresponding white box when button is hovered */
+.yellowBlackButton:hover + .whiteBox,
+.yellowBlackButton1:hover + .whiteBox1,
+.yellowBlackButton2:hover + .whiteBox2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.p {
+    padding: 15px;
+    text-align: center;
+    font-family: var(--font-primary); /* Use NickySans */
+    font-weight: var(--regular);
+    font-size: 1rem;
+}
+
+/* Heading Styles */
+.h1 {
+    bottom: 28%;
+    left: 10%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.h2 {
+    bottom: 20%;
+    left: 10%;
+    width: 22.5%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}

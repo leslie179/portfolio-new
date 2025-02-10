@@ -1,0 +1,26 @@
+/* BrandComponent.module.css */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2.5fr 2fr; /* Balance space around the logo */
+    grid-template-areas:
+        "text1 logo text2";
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    color: white;
+    background-color: var(--background);
+    text-align: center;
+   
+   padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Example height */
+    width: 100%; /* Example width */
+    border: 1px solid black; /* Just to see the container */
+  }

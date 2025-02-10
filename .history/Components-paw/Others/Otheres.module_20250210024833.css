@@ -1,0 +1,22 @@
+.h1{
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+
+.image-wrapper {
+    width: 40%; /* Same width for both images */
+    aspect-ratio: 1 / 1; /* Maintain consistent square aspect ratio */
+    overflow: hidden; /* Hide overflow if needed */
+}
+
+.img2, .img5 {
+    width: 100%; /* Image fills the wrapper */
+    height: 100%; /* Image fills the wrapper */
+    object-fit: cover; /* Maintain aspect ratio */
+}

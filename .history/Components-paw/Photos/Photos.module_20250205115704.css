@@ -1,0 +1,18 @@
+.img1{
+    padding-top: 5px;
+    background-color: var(--foreground);
+    padding-bottom: 5px;
+}
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+    padding-top: 5px;
+}
+
+.img2 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}

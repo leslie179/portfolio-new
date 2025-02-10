@@ -1,0 +1,120 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/Store.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+}
+
+/* Base button style */
+.buttonContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonStyle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    position: relative;
+}
+
+/* First Button */
+.buttonContainer1 {
+    left: 40%;
+    top: 30%;
+}
+
+/* Third Button (Second One Now) */
+.buttonContainer3 {
+    left: 50%;
+    top: 60%;
+}
+
+.buttonStyle::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #2F2F2F; /* Dark inner circle */
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Show buttons on hover */
+.headerContainer:hover .buttonStyle {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* White Box Style */
+.whiteBox {
+    width: 300px;
+    height: 150px;
+    background-color: beige;
+    border-radius: 5px;
+    transform: translateY(10px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    padding: 15px;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 1rem;
+}
+
+/* Positioning white boxes */
+.whiteBox1 {
+    position: absolute;
+    right:120%;  
+    top:-30%;
+}
+
+.whiteBox3 {
+    position: absolute;
+    left: 120%;
+    top: -30%;
+}
+
+/* Make the white box appear when hovering over button */
+.buttonContainer:hover .whiteBox {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Headings */
+.h1 {
+    bottom: 28%;
+    left: 10%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.h2 {
+    bottom: 20%;
+    left: 10%;
+    width: 22.5%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}

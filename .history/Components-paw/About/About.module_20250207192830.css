@@ -1,0 +1,72 @@
+/* Parent container styling */
+.body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: var(--background); /* Background color */
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row; /* Two-column layout */
+    justify-content: space-between; /* Adds space between the columns */
+    align-items: flex-start; /* Align columns to the top */
+    background-color: var(--foreground);
+    padding: 2em;
+    gap: 2em;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.leftColumn,
+.rightColumn {
+    flex: 1; /* Equal column width */
+    display: flex;
+    flex-direction: column; /* Stack content vertically in each column */
+    align-items: flex-start; /* Align content to the top left */
+}
+
+.h2 {
+    color: var(--black);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+}
+
+.p {
+    color: var(--black);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 1.5em; /* Reduce gap for mobile */
+        align-items: flex-start; /* Align content to the top */
+        padding
+    }
+
+    .leftColumn,
+    .rightColumn {
+        flex: unset; /* Remove equal width on mobile */
+        align-items: flex-start; /* Ensure content remains top-aligned */
+        text-align: left; /* Align text to the left */
+    }
+
+    .h2 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+    }
+
+    .p {
+        font-size: 0.9rem; /* Adjust paragraph size for mobile */
+    }
+}

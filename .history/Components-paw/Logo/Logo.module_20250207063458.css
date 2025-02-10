@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+@media (min-width: 900px) {
+  .container {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .item {
+      flex-direction: row; /* Horizontal layout on desktop */
+      justify-content: space-between;
+      align-items: center; /* Align items vertically in the center */
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  padding-top: 5%;
+  width: 90%; /* Full width on mobile */
+  text-align: center;
+}
+
+/* Assuming that CSS Modules are being used, class names in this file are placeholders that get compiled */
+.text {
+  text-align: center; /* Default text alignment */
+  padding: 10px; /* Default padding */
+}
+
+/* Logo.module.css */
+@media (min-width: 900px) {
+  .item .content .color1 {
+    width: 78% ;
+    padding-bottom: 3%;
+  }
+  .item .content .p {
+    width: 32% ;
+    padding-left: 5%;
+    padding-bottom: 3%;
+  }
+  .item .content .color {
+    width: 50%;
+    padding-bottom: 12%;
+    padding-top: 20%;
+  }
+}
+
+.plusContainer {
+  display: flex;
+  align-items: center; /* Center the plus sign vertically */
+  justify-content: center; /* Center the plus sign horizontally */
+}
+
+.p1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p {
+  
+  padding-bottom: 3%;
+  width:15%;
+}
+
+.color {
+  padding-bottom: 3%;
+  width: 30%; /* Adjust based on your design preference */
+}
+
+.color1{
+  padding-bottom: 3%;
+  width: 55%;
+}

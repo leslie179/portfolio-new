@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust based on your design needs */
+    width: 100%;
+}
+
+.container1 {
+    /* Additional styles for inner container if needed */
+}
+
+.img {
+    max-width: 100%; /* Ensures the image is responsive and fits its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.img {
+    max-width: 100%; /* Ensures the image is responsive and fits its container */
+    height: auto; /* Maintain aspect ratio */
+}

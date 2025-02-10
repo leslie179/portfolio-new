@@ -1,0 +1,36 @@
+.img1{
+    padding-top: 5px;
+    background-color: var(--foreground);
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+    padding-top: 5px;
+    
+}
+
+.img2 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-right: 4px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.img3 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-left: 4px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.h1{
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    padding-top: 5%;
+}

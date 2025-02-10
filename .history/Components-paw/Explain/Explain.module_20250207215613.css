@@ -1,0 +1,123 @@
+/* Main Container */
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Use a path relative to the root */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+     /* Important for containing child elements */
+}
+
+/* Annotation Container */
+.annotationContainer1 {
+    position: relative;
+    display: flex;
+    align-items: top; /* Align line and white box vertically */
+    gap: 10px; /* Space between the paragraph and the line */
+    margin-bottom: 20px; /* Space between annotations */
+    flex-direction: row-reverse; /* Reverse the order: line comes after the paragraph */
+}
+
+/* Line Styling */
+.line1 {
+    width: 200px; /* Line length */
+    height: 2px; /* Line thickness */
+    background-color: black; /* Line color */
+    margin-top: 8px;
+}
+
+.line2 {
+    width: 200px; /* Line length */
+    height: 2px; /* Line thickness */
+    background-color: black; /* Line color */
+    margin-top: 8px;
+}
+
+/* White Box Styling */
+.whiteBox1 {
+    position: relative;
+    width: 15%; /* Set a maximum width for the white box */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Example annotation positioning */
+.annotation1 {
+    top:31%;
+    right: 62%; /* Position the entire annotation container */
+}
+
+.annotation2 {
+    top:40%;
+    right: 55%; /* Position the entire annotation container */
+}
+
+
+/* Annotation Container */
+.annotationContainer3 {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* Align line and white box to the top */
+    gap: 10px; /* Space between the paragraph and the line */
+    margin-bottom: 20px; /* Space between annotations */
+    flex-direction: row-reverse; /* Place the line after the paragraph */
+}
+
+/* Line Styling */
+.line3 {
+    width: 100px; /* Line length */
+    height: 2px; /* Line thickness */
+    background-color: black; /* Line color */
+    flex-shrink: 0; /* Prevent the line from shrinking */
+}
+
+/* White Box Styling */
+.whiteBox3 {
+    position: relative;
+    width: 30%; /* Set a maximum width for the white box */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    margin: 0; /* Remove default paragraph margin */
+}
+
+/* Annotation Positioning */
+.annotation3 {
+    position: absolute; /* Allows precise positioning */
+    top: 40%; /* Vertical positioning */
+    right: 0%; /* Horizontal positioning */
+    z-index: ;
+}
+
+
+/* Hide white box by default if hover is required */
+
+
+
+
+
+
+/* Headings */
+.h1,
+.h2 {
+    color: black;
+    font-family: 'NickySans', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}

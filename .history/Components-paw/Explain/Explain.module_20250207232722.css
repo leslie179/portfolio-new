@@ -1,0 +1,79 @@
+/* Main Container */
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    padding-top: 10%;
+    position: relative;
+    max-width: 100vw; /* Prevents overflow */
+    overflow-x: hidden;
+}
+
+/* Annotation Containers */
+.annotationContainer1,
+.annotationContainer3 {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* Align line and white box vertically */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Line Styling */
+.line1, .line2, .line3 {
+    height: 2px;
+    background-color: black;
+    margin-top: 8px;
+}
+
+/* Individual Line Lengths */
+.line1 { width: 270px; }
+.line2 { width: 200px; }
+.line3 { width: 130px; }
+
+/* White Box Styling */
+.whiteBox1, .whiteBox3 {
+    position: relative;
+    width: 15%;
+    max-width: 90%; /* Ensures content stays inside */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Positioning of Annotations (Preserved) */
+.annotation1 {
+    position: absolute;
+    top: 7%;
+    right: 58%;
+}
+
+.annotation2 {
+    position: absolute;
+    top: 25%;
+    right: 59%;
+}
+
+.annotation3 {
+    position: absolute;
+    top: -25%;
+    left: 58%;
+}
+
+/* Ensures No Overflow */
+.annotationContainer1,
+.annotationContainer3 {
+    max-width: 90vw;
+}
+
+/* ✅ Hide the Explain component on Mobile (Less than 768px) */
+@media screen and (max-width: 768px) {
+    .headerContainer {
+        display: none; /* Hides component on mobile */
+    }
+}

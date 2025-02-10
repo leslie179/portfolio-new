@@ -1,0 +1,100 @@
+/* Main Container */
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Use a path relative to the root */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+     /* Important for containing child elements */
+}
+
+/* Annotation Container */
+.annotationContainer1 {
+    position: relative;
+    display: flex;
+    align-items: top; /* Align line and white box vertically */
+    gap: 10px; /* Space between the paragraph and the line */
+    margin-bottom: 20px; /* Space between annotations */
+    flex-direction: row-reverse; /* Reverse the order: line comes after the paragraph */
+}
+
+/* Line Styling */
+.line1 {
+    width: 100px; /* Line length */
+    height: 2px; /* Line thickness */
+    background-color: black; /* Line color */
+  
+}
+
+/* White Box Styling */
+.whiteBox1 {
+    position: relative;
+    width: 15%; /* Set a maximum width for the white box */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Example annotation positioning */
+.annotation1 {
+    top:50%;
+    right: 60%; /* Position the entire annotation container */
+}
+
+
+.line2 {
+    width: 100px;
+    /* Line length */
+    height: 2px;
+    /* Line thickness */
+    background-color: black;
+    top:-10px;
+    /* Line color */
+}
+
+/* White Box Styling */
+.whiteBox2 {
+    position: relative;
+
+
+    width: 30%;
+    /* Set a maximum width for the white box */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+}
+
+/* Hide white box by default if hover is required */
+
+
+.annotation2 {
+    left: 30%;
+}
+
+
+
+
+
+/* Headings */
+.h1,
+.h2 {
+    color: black;
+    font-family: 'NickySans', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}

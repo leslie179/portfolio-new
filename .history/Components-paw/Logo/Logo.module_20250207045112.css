@@ -1,0 +1,55 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .container {
+      grid-template-columns: repeat(3, 1fr);
+      align-items: start; /* Align items to the start of each grid cell */
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adds spacing between items */
+}
+
+.text, .p1 {
+  width: 100%; /* Ensures text and plus signs span the full width of their container */
+  text-align: center; /* Centers text and plus signs */
+}
+
+.p1 {
+  padding-top: 5%;
+  font-size: 2rem;
+  display: block; /* Ensure it's always displayed */
+}
+
+.text {
+  padding-top: 5%;
+  display: block; /* Make sure text is always displayed */
+}
+
+@media (min-width: 600px) {
+  .p, .color {
+      width: auto; /* Allow images to resize naturally within their grid cells */
+      max-width: 100%; /* Prevents images from exceeding their container size */
+  }
+  .item {
+      align-items: center; /* Center items horizontally in their container */
+  }
+}
+
+.p {
+  width: 35%; /* Adjust based on your design preference */
+  padding-left: 5%;
+}
+
+.color {
+  width: 60%; /* Adjust based on your design preference */
+}

@@ -1,0 +1,23 @@
+/* BrandComponent.module.css */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2.5fr 2fr; /* Balance space around the logo */
+    grid-template-areas:
+        "text1 logo text2";
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    color: white;
+    background-color: var(--background);
+    text-align: center;
+   
+   padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-self;
+}

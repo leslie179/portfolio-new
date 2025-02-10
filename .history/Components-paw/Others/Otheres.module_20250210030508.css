@@ -1,0 +1,57 @@
+.h1{
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+
+.container {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 15%; /* Space between items */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.wrapper {
+    width: 40%; /* Same width for each image */
+    aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.img2, .img5 {
+    width: 100%; /* Fill the wrapper */
+    height: 60%; /* Fill the wrapper */
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    border-radius: 15px;
+}
+
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-e;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}

@@ -1,0 +1,38 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Add some padding around */
+}
+
+.logoContainer {
+    position: relative;
+    width: 400px; /* Adjust width to control logo size */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%; /* Make the logo fully responsive */
+    height: auto;
+    z-index: 1; /* Ensure the logo is above other elements */
+}
+
+.line1 {
+    width: 100px; /* Adjust line length */
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}

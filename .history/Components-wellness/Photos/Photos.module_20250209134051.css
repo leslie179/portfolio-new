@@ -1,0 +1,70 @@
+.img1{
+    padding-top: 5px;
+    background-color: var(--foreground);
+    padding-bottom: 5px;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+}
+
+.bigContainer{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #F6E6C1;
+}
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+    padding-top: 5px;
+    
+    
+}
+
+.img2 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-right: 35px;
+    padding-bottom: 5px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.img5{
+    width:50%;
+    padding-left: 3px;
+    padding-bottom: 5px;
+}
+
+.img3 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-left: 4px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.h1{
+    color: var(--foreground);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+   
+}
+
+.img3{
+    width:60%;
+    
+    margin: 0 auto;
+}
+
+.bottom{
+
+}
+
+.img4{
+    width: 45%;
+    margin: 0 auto;
+}

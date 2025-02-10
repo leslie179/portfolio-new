@@ -1,0 +1,177 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/Store.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+}
+
+.yellowBlackButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.yellowBlackButton1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.yellowBlackButton::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #2F2F2F; /* Dark color */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.headerContainer:hover .yellowBlackButton {
+    visibility: visible;
+    opacity: 1;
+}
+
+.whiteBox {
+    width: 300px;
+    height: 150px;
+    background-color: beige;
+    position: absolute;
+    left:20%; /* 10px left of the button */
+    top: 33%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    z-index: 10; /* Ensure it's on top */
+}
+
+
+.yellowBlackButton1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.yellowBlackButton1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.yellowBlackButton1::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #2F2F2F; /* Dark color */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.headerContainer:hover .yellowBlackButton1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.whiteBox1 {
+    width: 300px;
+    height: 150px;
+    background-color: beige;
+    position: absolute;
+    left:20%; /* 10px left of the button */
+    top: 33%;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    z-index: 10; /* Ensure it's on top */
+}
+
+.p{
+    padding: 15px;
+    text-align: center;
+    font-family: var(--font-primary); /* Use NickySans */
+    font-weight: var(--regular);
+    font-size: 1rem;
+
+}
+.yellowBlackButton:hover + .whiteBox {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.h1 {
+    bottom: 28%;
+    left: 10%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.h2 {
+    bottom: 20%;
+    left: 10%;
+    width: 22.5%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}

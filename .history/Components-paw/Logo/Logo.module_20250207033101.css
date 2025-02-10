@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust based on your design needs */
+    width: 100%;
+}
+
+.img1 {
+    max-width: 80%; /* Ensures the image is responsive and fits its container */
+    height: auto; /* Maintain aspect ratio */
+}

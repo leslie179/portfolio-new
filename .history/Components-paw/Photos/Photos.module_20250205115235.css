@@ -1,0 +1,10 @@
+.container {
+    display: flex;  /* Establishes a flex container */
+    align-items: center; /* Centers the items vertically */
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.img1 {
+    max-width: 50%; /* Limits each child to half of the container's width */
+    height: auto; /* Maintains aspect ratio */
+}

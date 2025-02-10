@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f7f5;
+  --foreground: #171717;
+  --yellow: #FFCB57;
+  --beige: #F4EADF;
+  --regular:400;
+  
+}
+
+
+@font-face {
+  font-family: 'NickySans';
+  src: url('/src/assets/fonts/NickySans-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NickySans';
+  src: url('/src/assets/fonts/NickySans-Black.ttf') format('truetype');
+  font-weight: 900; /* Black weight */
+  font-style: normal;
+}

@@ -1,0 +1,50 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Add some padding around */
+}
+
+.logoContainer {
+    position: relative;
+    width: 400px; /* Adjust width to control logo size */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.annotation {
+    position: relative; /* Container for the line and paragraph */
+    display: inline-block; /* Ensure the content doesn't take up full width */
+}
+
+.line1 {
+    position: absolute;
+    width: 100px; /* Line length */
+    height: 2px;
+    background-color: black;
+    top: 50%; /* Vertically center the line */
+    left: 54%;
+    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+}
+
+.p1 {
+    position: absolute;
+    top: 50%; /* Adjust position relative to the line */
+    left: 120px; /* Position the paragraph to the right of the line */
+    transform: translateY(-50%); /* Vertically center-align the paragraph with the line */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    max-width: 220px; /* Control paragraph width */
+}

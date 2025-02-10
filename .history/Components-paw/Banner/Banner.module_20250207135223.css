@@ -1,0 +1,52 @@
+.headerContainer{
+    background-image: url('/site-photos-paw/Store.png'); /* Use a path relative to the root */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+}
+
+.yellowBlackButton{
+    width: 100px; /* Adjust the size */
+    height: 100px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 40%;
+}
+
+.yellowBlackButton::after{
+    content: "";
+    width: 40px; /* Adjust inner circle size */
+    height: 40px;
+    background-color: #2F2F2F; /* Dark color */
+    border-radius: 50%; /* Inner circle */
+    position: absolute;
+}
+
+.h1{
+    bottom: 28%;
+    left: 10%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.h2{
+    bottom: 20%;
+    left: 10%;
+    width: 22.5%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}

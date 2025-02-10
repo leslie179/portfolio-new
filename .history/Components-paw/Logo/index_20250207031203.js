@@ -1,0 +1,20 @@
+import React from 'react';
+import styles from './Logo.module.css'; // Adjust path if necessary
+
+const BrandComponent = () => {
+    return (
+        <div className={styles.container}>
+            
+                    <source media="(min-width: 769px)" srcSet="site-photos-paw/griddy-doogo.png" />
+                    <source media="(max-width: 768px)" srcSet="site-photos-paw/Mobile.png" />
+                    <img src="site-photos-paw/Screen.png" alt="Brand Logo" />
+                </picture>
+            </div>
+            <div className={styles.text} style={{ gridArea: 'text2' }}>
+                <p>The brand believes there are no bad dogs, only untrained ones. The logo features a content corgi, symbolizing peace and happiness even for stubborn breeds.</p>
+            </div>
+        </div>
+    );
+};
+
+export default BrandComponent;

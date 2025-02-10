@@ -1,0 +1,78 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 00px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .item {
+    flex-direction: row; /* Horizontal layout on desktop */
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  padding-top: 5%;
+  width: 90%; /* Full width on mobile */
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .text {
+    width: 70%; /* Restrict the width of the text on desktop */
+    padding: 20px 20px; /* Add some padding for better readability */
+  }
+}
+
+.plusContainer {
+  display: flex;
+  align-items: center; /* Center the plus sign vertically */
+  justify-content: center; /* Center the plus sign horizontally */
+}
+
+.p1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.p {
+  width: 32%; /* Adjusted to align better with new width standards */
+  padding-left: 5%;
+  padding-bottom: 3%;
+}
+
+.color {
+  width: 50%; /* Adjusted width for better alignment */
+  padding-bottom: 12%;
+  padding-top: 20%;
+}
+
+.color1 {
+  width: 80%; /* Specific width adjustment for .color1 on desktop */
+  padding-bottom: 3%;
+}
+
+/* Adjust padding if needed */
+.pLogo {
+  /* Specify styles if needed */
+}

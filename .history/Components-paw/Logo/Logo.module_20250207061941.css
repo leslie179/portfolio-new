@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal layout */
+  justify-content: flex-start; /* Aligns children to start of the flex container */
+  align-items: center; /* Vertical alignment in the center */
+  min-height: 150px; /* Ensure a minimum height for visual consistency */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text and images to start */
+  flex-grow: 1; /* Allows the content block to expand */
+}
+
+.text {
+  width: 100%; /* Full width of its container to ensure alignment */
+  text-align: left; /* Ensure text is left-aligned */
+  padding-top: 5%;
+  padding-left: 20px; /* Consistent padding from the left edge */
+}
+
+.p1 {
+  font-size: 2rem;
+  margin-left: auto; /* Pushes the plus sign to the right */
+}
+
+/* Responsive and specific class adjustments */
+@media (min-width: 600px) {
+  .p, .color, .color1 {
+    /* Specific image size adjustments here */
+  }
+}

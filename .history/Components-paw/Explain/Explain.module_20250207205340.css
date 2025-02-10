@@ -1,0 +1,43 @@
+/* Main Container */
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative; /* Allows child elements to use relative positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.annotationContainer:nth-child(1) {
+    top: 10%; /* Example: Place the first annotation higher */
+    left: 20%;
+}
+
+.annotationContainer:nth-child(2) {
+    top: 50%; /* Example: Place the second annotation lower */
+    left: 10%;
+}
+
+.line {
+    width: 100px; /* Line length */
+    height: 2px; /* Line thickness */
+    background-color: black; /* Line color */
+    flex-shrink: 0; /* Prevent the line from shrinking */
+    left: -50%;
+}
+
+/* Paragraph Styling */
+.paragraph {
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    margin: 0; /* Remove default paragraph margin */
+    max-width: 220px; /* Control paragraph width */
+}

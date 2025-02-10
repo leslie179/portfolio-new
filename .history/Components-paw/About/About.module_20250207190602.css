@@ -1,0 +1,57 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row; /* Display two columns */
+    justify-content: space-between; /* Space between the columns */
+    align-items: flex-start; /* Align content to the top */
+    background-color: var(--foreground); /* Background color */
+    padding: 2em; /* Add padding around the container */
+    gap: 2em; /* Space between columns */
+    padding-left: ;
+}
+
+.leftColumn,
+.rightColumn {
+    flex: 1; /* Equal width columns */
+}
+
+.h2 {
+    color: var(--black); /* Black color for headings */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
+}
+
+.p {
+    color: var(--black); /* Black color for text */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1em; /* Space below paragraphs */
+}
+
+.rightColumn .p {
+    max-width: 80%; /* Optional: Limit the paragraph width on the right column */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .headerContainer {
+        flex-direction: column; /* Stack columns on mobile */
+        gap: 1.5em; /* Reduce gap for mobile */
+    }
+
+    .leftColumn,
+    .rightColumn {
+        flex: unset; /* Remove equal width on mobile */
+    }
+
+    .h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+    }
+}

@@ -1,0 +1,67 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; /* Add some padding around */
+}
+
+.logoContainer {
+    position: relative;
+    width: 400px; /* Adjust width to control logo size */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%; /* Make the logo fully responsive */
+    height: auto;
+    z-index: 1; /* Ensure the logo is above other elements */
+}
+
+.annotation {
+    position: absolute;
+    width: 220px; /* Adjust width for text */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent background to improve readability */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; /* Ensure annotations are above the logo */
+}
+
+.annotation .line {
+    width: 100px; /* Adjust line length */
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Positioning the annotations */
+.annotation:nth-child(1) {
+    top: 10%;
+    left: -150%; /* Position the first annotation to the left of the logo */
+}
+
+.annotation:nth-child(2) {
+    bottom: 10%;
+    left: -150%; /* Position the second annotation below and to the left of the logo */
+}
+
+.annotation:nth-child(3) {
+    top: 200%;
+    right: -150%; /* Position the third annotation to the right of the logo */
+}

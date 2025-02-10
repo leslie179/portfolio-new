@@ -1,0 +1,40 @@
+/* Main Container */
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative; /* Allows child elements to use relative positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Annotation Container */
+.annotation {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically align the line and paragraph */
+    gap: 10px; /* Add space between the line and the paragraph */
+}
+
+/* Line Styling */
+.line {
+    width: 100px; /* Line length */
+    height: 2px; /* Line thickness */
+    background-color: black; /* Line color */
+    flex-shrink: 0; /* Prevent the line from shrinking */
+}
+
+/* Paragraph Styling */
+.paragraph {
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    margin: 0; /* Remove default paragraph margin */
+    max-width: 220px; /* Control paragraph width */
+}

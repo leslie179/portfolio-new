@@ -1,0 +1,81 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/Store.png'); /* Use a path relative to the root */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    position: relative; /* Important for containing child elements */
+}
+
+.yellowBlackButton {
+    width: 40px; /* Adjust the size */
+    height: 40px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: #FFD469; /* Yellow color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 40%; /* Adjust as needed */
+    top: 30%;  /* Adjust as needed */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* For smooth transitions */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth visibility and opacity change */
+}
+
+.yellowBlackButton::after {
+    content: "";
+    width: 20px; /* Adjust inner circle size */
+    height: 20px;
+    background-color: #2F2F2F; /* Dark color */
+    border-radius: 50%; /* Inner circle */
+    position: absolute;
+}
+
+.headerContainer:hover .yellowBlackButton {
+    visibility: visible; /* Show the button */
+    opacity: 1; /* Fully opaque */
+}
+
+.whiteBox {
+    width: 150px; /* Adjust size */
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+}
+
+.yellowBlackButton:hover + .whiteBox {
+    visibility: visible; /* Show the white box */
+    opacity: 1;
+    left: calc(100% + 10px); /* Position white box 10px to the left of the button */
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+
+.h1 {
+    bottom: 28%;
+    left: 10%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.h2 {
+    bottom: 20%;
+    left: 10%;
+    width: 22.5%;
+    position: absolute;
+    color: white;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+}

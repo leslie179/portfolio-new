@@ -1,0 +1,46 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/background-explain.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoContainer {
+    position: relative;
+    width: 300px; /* Adjust to fit your logo size */
+    height: auto;
+}
+
+.logo {
+    width: 100%; /* Scale logo */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.annotation {
+    position: absolute;
+    width: 220px; /* Adjust width for text */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+}
+
+.line {
+    width: 100px; /* Adjust line length */
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
