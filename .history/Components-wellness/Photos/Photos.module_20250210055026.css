@@ -1,0 +1,111 @@
+.img1{
+    padding-top: 6px;
+
+    padding-bottom: 6px;
+    
+    width: 100%;
+}
+
+.bigContainer{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #F6E6C1;
+}
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+    padding-top: 5px;
+    
+    
+}
+
+.img2 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-right: 6px;
+    padding-bottom: 6px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.img5{
+    width:50%;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    object-fit: cover; 
+}
+
+.img3 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-left: 4px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.h1{
+    color: var(--foreground);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+   
+}
+
+.img3{
+    width:60%;
+    
+    margin: 0 auto;
+}
+
+
+
+
+  .bottom {
+    text-align: center; /* Center align the entire bottom section */
+   padding-top: 3%;
+    background-color: #F6E6C1; /* Ensure consistent background color */
+}
+
+.wrapper {
+    display: flex; /* Align the left and right sections side by side */
+    justify-content: space-between; /* Add space between the two sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add spacing between the two sections */
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
+
+.leftSection {
+    flex: 1; /* Allow the left section to take up one part of the available space */
+    max-width: 60%; /* Prevent it from becoming too wide */
+}
+
+.heading {
+    font-size: 2rem; /* Make the heading prominent */
+    font-weight: bold; /* Bold font for emphasis */
+    color: var(--foreground); /* Use your variable for consistency */
+    margin-bottom: 10px; /* Add spacing below the heading */
+    text-align: left; /* Align the heading to the left */
+}
+
+.logoImage {
+    width: 100%; /* Make the logo image responsive */
+    max-width: 600px; /* Set a maximum width for better layout */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 8px; /* Add optional rounded corners */
+    margin-top: 10px; /* Add spacing above the image */
+}
+
+.rightSection {
+    flex: 1; /* Allow the right section to take up one part of the available space */
+    max-width: 35%; /* Prevent it from becoming too wide */
+    font-size: 1rem; /* Adjust font size for the paragraph */
+    line-height: 1.8; /* Improve text readability with spacing between lines */
+    text-align: left; /* Align the text to the left */
+    display: flex; /* Align the text properly */
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center; /* Center the text vertically with the image */
+}
+
