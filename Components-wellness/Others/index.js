@@ -8,7 +8,7 @@ const Others = () => {
         <div className={styles.wrapper}>
           <img
             className={styles.img2}
-            src="/site-photos-wellness/paw-sticker.jpg"
+            src="/site-photos-paw/paw-sticker.jpg"
             alt="mug"
             loading="lazy"
           />
