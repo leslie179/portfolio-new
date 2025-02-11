@@ -1,0 +1,117 @@
+.img1{
+    padding-top: 6px;
+
+    padding-bottom: 6px;
+    
+    width: 100%;
+}
+
+.bigContainer{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #F6E6C1;
+}
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+    padding-top: 5px;
+    
+    
+}
+
+.img2 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-right: 6px;
+    padding-bottom: 6px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.img5{
+    width:50%;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    object-fit: cover; 
+}
+
+.img3 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-left: 4px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.h1{
+    color: var(--foreground);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+   
+}
+
+.img3{
+    width:60%;
+    
+    margin: 0 auto;
+}
+
+.p1{
+  text-align: left;
+}
+
+
+  .bottom {
+    text-align: center; /* Center align the entire bottom section */
+   padding-top: 3%;
+    background-color: #F6E6C1; 
+    padding-bottom: 3%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.leftSection {
+  flex: 1;
+  max-width: 50%; 
+}
+
+.heading {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: var(--foreground);
+    margin-bottom: 10px; 
+    text-align: left; 
+}
+
+.logoImage {
+    width: 100%;
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 8px;
+    margin-top: 10px; 
+}
+
+.rightSection {
+  flex: 1; 
+  max-width: 45%; 
+  font-size: 1rem; 
+  line-height: 1.5; 
+  text-align: left; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  font-family: 'NickySans', Arial, sans-serif;
+  padding-top: 7%;
+}
+

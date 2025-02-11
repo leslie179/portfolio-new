@@ -1,0 +1,54 @@
+.floatingMenu {
+    position: fixed;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 20%;
+    min-width: 300px; 
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px 20px;
+    border-radius: 30px;
+    z-index: 10000;
+    transition: top 0.6s;
+}
+
+.img {
+    flex: 0 0 auto;
+    width: 60px; 
+    margin-right: 20px; 
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Center navigation items horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Take the full width of its container */
+}
+
+.home, .projects {
+    margin: 0 10px; /* Even spacing around links */
+    text-align: center; /* Ensure text is centered within its container */
+}
+
+@media (max-width: 768px) {
+    .floatingMenu {
+        width: 50%; /* Increase width on smaller screens */
+    }
+    .img {
+        width: 40px; /* Adjust logo size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .floatingMenu {
+        width: 80%; /* Full width on mobile */
+        justify-content: space-between; /* Adjust spacing on mobile */
+    }
+    .img {
+        margin-right: 10px; /* Reduce space on mobile */
+    }
+}

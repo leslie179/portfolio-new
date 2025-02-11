@@ -1,0 +1,95 @@
+.img1{
+    padding-top: 6px;
+
+    padding-bottom: 6px;
+    
+    width: 100%;
+}
+
+.bigContainer{
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #F6E6C1;
+}
+
+.container {
+    display: flex;  /* Continues to align items horizontally */
+    align-items: stretch; /* Changes to stretch to make all children fill the container height */
+    justify-content: center; /* Centers the items horizontally */
+    padding-top: 5px;
+    
+    
+}
+
+.img2 {
+    width: 50%; /* Keeps each child at half of the container's width */
+    object-fit: cover; 
+    padding-right: 6px;
+    padding-bottom: 6px;
+    /* Ensures the content is sized properly within the height and width limits without distorting aspect ratio */
+}
+
+.img5{
+    width:50%;
+    padding-left: 6px;
+    padding-bottom: 6px;
+    object-fit: cover; 
+}
+
+.img3 {
+    margin:0 auto;
+    
+}
+
+.h1{
+    color: var(--foreground);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+   
+}
+
+.img3{
+    width:60%;
+    
+    margin: 0 auto;
+}
+
+.bottom {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sideBySide {
+    display: flex; /* Align children horizontally */
+    justify-content: space-between; /* Add space between items */
+    align-items: flex-start; /* Align titles and images at the top */
+    gap: 10px; /* Add spacing between columns */
+    margin-top: 20px;
+  }
+  
+  .item {
+    flex: 1; /* Ensure equal width for each column */
+    text-align: center; /* Center-align content in each column */
+  }
+  
+  .img4 {
+    width: 100%; /* Make images responsive */
+    max-width: 600px; /* Set a max width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+   
+  }
+  
+  .img6 {
+    width: 100%; /* Make images responsive */
+    max-width: 600px; /* Set a max width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+    padding-top: 10%;
+  }
+  
+

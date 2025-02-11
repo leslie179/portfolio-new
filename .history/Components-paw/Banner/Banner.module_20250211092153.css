@@ -1,0 +1,9 @@
+.headerContainer {
+    background-image: url('/site-photos-paw/Store.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    position: relative; /* Required for child elements */
+}

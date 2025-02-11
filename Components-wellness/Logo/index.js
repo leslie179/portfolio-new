@@ -1,5 +1,5 @@
 import React from 'react';
-// Adjust the path as necessary
+
 import styles from './Logo.module.css';
 
 const Logo = () => {
