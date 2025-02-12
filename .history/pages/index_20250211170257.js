@@ -9,7 +9,7 @@ import Menu from '@/components/Menu';
 
 import Video from '@/components/Video';
 
-
+import Changing from '@/components/Changing';
 import Banner from '@/components/Banner';
 export default function Home() {
   return (

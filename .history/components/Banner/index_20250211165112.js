@@ -6,11 +6,11 @@ const Banner = () => {
     const backgrounds = [
         '/site-photos/Candl-Branding.png',
         '/site-photos/Paw-posters.png',
-        '/site-photos/paw-by-paw-branding.jpg',
+        '/site-photos/Paw-By-Paw-Branding.jpg',
         '/site-photos/four-flag.png',
         '/site-photos/Paw-snack.png'
     ];
-
+Paw-snack.png
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((currentIndex + 1) % backgrounds.length);
