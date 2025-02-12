@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"]
+      }
+    }
+  }
+
+
+  "scripts": {
+  "build": "next build && next lint --max-warnings 0"
+}
