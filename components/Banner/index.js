@@ -4,7 +4,7 @@ import styles from './Banner.module.css';
 const Banner = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const backgrounds = [
-        '/site-photos/Candl-Branding.png',
+        '/site-photos/candl-Branding.png',
         '/site-photos/Paw-posters.png',
         '/site-photos/Paw-By-Paw-Branding.jpg',
         '/site-photos/four-flag.png',
