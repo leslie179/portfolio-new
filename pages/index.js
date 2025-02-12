@@ -8,7 +8,7 @@ import BlockThree from '@/components/BlockThree';
 import Menu from '@/components/Menu';
 
 import Video from '@/components/Video';
-import Mouse from '@/components/Mouse';
+
 import Changing from '@/components/Changing';
 import Banner from '@/components/Banner';
 export default function Home() {
