@@ -6,7 +6,7 @@ const Banner = () => {
     const backgrounds = [
         '/site-photos/candl-branding.png',
         '/site-photos/Paw-posters.png',
-        
+        '/site-photos-candl/candel-candl.jpg',
         '/site-photos/four-flag.png',
         '/site-photos/Paw-snack.png'
     ];
