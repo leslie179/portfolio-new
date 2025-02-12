@@ -4,9 +4,9 @@ import styles from './Banner.module.css';
 const Banner = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const backgrounds = [
-        '/site-photos/candl-branding.png',
+         '/site-photos/Candl-Branding.png',
         '/site-photos/Paw-posters.png',
-        '/site-photos-candl/candel-candl.jpg',
+        '/site-photos/paw-by-paw-branding.jpg',
         '/site-photos/four-flag.png',
         '/site-photos/Paw-snack.png'
     ];
