@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
-    "next": "14.2.24",
+    "next": "14.24",
     "or": "^0.2.0",
-    "protfolio2": "file:"
+    "protfolio2": "file:",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "postcss": "^8",
