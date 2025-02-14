@@ -12,6 +12,7 @@
     "@react-spring/web": "^9.7.5",
     "next": "14.2.24",
     "or": "^0.2.0",
+    "prop-types": "^15.8.1",
     "protfolio2": "file:"
   },
   "devDependencies": {
