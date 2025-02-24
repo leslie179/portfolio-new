@@ -1,8 +1,0 @@
-.stickyBlock {
-    position: sticky;
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 3; /* Higher z-index than BlockTwo */
-    height: 120vh;
-    background: white;
-    padding: 20px;
-}

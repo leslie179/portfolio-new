@@ -8,7 +8,7 @@ import BlockTwo from '@/components/BlockTwo';
 import BlockThree from '@/components/BlockThree';
 import BlockFour from '@/components/BlockFour';
 import Menu from '@/components/Menu';
-import BlockFive from '@/components/BlockFive';
+
 import Banner from '@/components/Banner';
 
 export default function Home() {
@@ -56,10 +56,8 @@ export default function Home() {
     
         <BlockOne />
         <BlockTwo />
-        <BlockFour />
-        <BlockFive />
         <BlockThree />
-        
+        <BlockFour />
         <Footer />
       </main>
     </div>
