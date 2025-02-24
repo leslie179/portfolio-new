@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    background: rgb(19, 19, 19);
+    background: black;
     height: 118vh;
     display: flex;
     flex-direction: column;

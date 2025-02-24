@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import BlockOne from '@/components/BlockOne';
 import BlockTwo from '@/components/BlockTwo';
 import BlockThree from '@/components/BlockThree';
-import BlockFour from '@/components/BlockFour';
+import BlockFour from 
 import Menu from '@/components/Menu';
 
 import Banner from '@/components/Banner';

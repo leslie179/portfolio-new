@@ -6,9 +6,9 @@ import Footer from '@/components/Footer';
 import BlockOne from '@/components/BlockOne';
 import BlockTwo from '@/components/BlockTwo';
 import BlockThree from '@/components/BlockThree';
-import BlockFour from '@/components/BlockFour';
-import Menu from '@/components/Menu';
 
+import Menu from '@/components/Menu';
+import Video from '@/components/Video';
 import Banner from '@/components/Banner';
 
 export default function Home() {

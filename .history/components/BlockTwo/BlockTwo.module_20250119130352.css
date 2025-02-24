@@ -1,8 +1,0 @@
-.stickyBlock {
-    position: sticky;
-    top: 0; /* Sticks to the top of the viewport */
-    z-index: 2; /* Ensure it appears below the next block */
-    height: 130vh;
-    background: black;
-    padding: 20px;
-}
