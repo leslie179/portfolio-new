@@ -1,10 +1,8 @@
 import styles from './Photos.module.css';
 
 const Photos = () => {
-    const embedId = "uf32iSEPRRA";
-
-
     return (
+        const embedId = "uf32iSEPRRA";
         <div className={styles.container}>
             <div className={styles.wrap}>
                 <h1 className={styles.h1}>
@@ -182,14 +180,18 @@ const Photos = () => {
                 <div className={styles.leftColumn}>
                     <h2 className={styles.h2}>6. WireFrame</h2>
                     <p className={styles.paragraph}>
-                        
+                        In this analysis we compared 8 different competitors to learn what disadvantages and advantages help to support our current theory and to take those lessons into our own app, truly creating something that is meant to last. And to our surprise many of them are ...
                     </p>
                 </div>
             </div>
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
-                    <h2 className={styles.h2}>7. Promotional Assets</h2>
-                    <div className={styles.videoResponsive}>
+                    <h2 className={styles.h2}>7. WireFrame</h2>
+                    <p className={styles.paragraph}>
+                        Promotional assets
+                    </p>
+
+                    <div className="video-responsive">
                         <iframe
                             width="853"
                             height="480"
@@ -200,8 +202,8 @@ const Photos = () => {
                             title="Embedded youtube"
                             referrerPolicy="strict-origin-when-cross-origin"
                         />
+                    </div>
                 </div>
-            </div>
             </div>
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
@@ -217,11 +219,11 @@ const Photos = () => {
 
 
 
-               
+                </div>
             </div>
-            
+
         </div>
-        </div>
+
     );
 };
 

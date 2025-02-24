@@ -264,16 +264,15 @@
     position: relative;
     
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 450px;
-    min-width: 800px; 
-    max-width: 3000px; /* Ensures the video won't exceed original size */
+    height: 0;
+    max-width: 853px; /* Ensures the video won't exceed original size */
     margin: 0 auto; /* Centers the container horizontally */
 }
 
 .videoResponsive iframe {
     position: absolute;
     top: 0;
-    left: 30%;
+    left: 50%;
     right: 0;
     bottom: 0;
     width: 100%;

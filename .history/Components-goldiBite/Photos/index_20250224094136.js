@@ -1,9 +1,6 @@
 import styles from './Photos.module.css';
 
 const Photos = () => {
-    const embedId = "uf32iSEPRRA";
-
-
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
@@ -178,34 +175,10 @@ const Photos = () => {
                 <h2 className={styles.h2}>Icon</h2>
                 <img className={styles.img6} src="site-photos-goldibite/icons.png" />
             </div>
+
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
-                    <h2 className={styles.h2}>6. WireFrame</h2>
-                    <p className={styles.paragraph}>
-                        
-                    </p>
-                </div>
-            </div>
-            <div className={styles.contain}>
-                <div className={styles.leftColumn}>
-                    <h2 className={styles.h2}>7. Promotional Assets</h2>
-                    <div className={styles.videoResponsive}>
-                        <iframe
-                            width="853"
-                            height="480"
-                            src={`https://www.youtube.com/embed/${embedId}?controls=0`}
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                            title="Embedded youtube"
-                            referrerPolicy="strict-origin-when-cross-origin"
-                        />
-                </div>
-            </div>
-            </div>
-            <div className={styles.contain}>
-                <div className={styles.leftColumn}>
-                    <h2 className={styles.h2}>8. Final Product</h2>
+                    <h2 className={styles.h2}>6. Final Product</h2>
                     <div className={styles.figmaContainer}>
                         <iframe
                             className={styles.figmaIframe}
@@ -217,11 +190,11 @@ const Photos = () => {
 
 
 
-               
+                </div>
             </div>
             
         </div>
-        </div>
+
     );
 };
 

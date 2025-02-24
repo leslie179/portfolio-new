@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import Menu from '@/components/Menu';
 import Banner from '@/Components-goldibite/Banner';
 import About from '@/Components-goldibite/About';
-
+import Wireframe from '@/Components-goldibite/Wireframe';
 import Photos from '@/Components-goldibite/Photos';
 
 import Others from '@/Components-goldibite/Others';

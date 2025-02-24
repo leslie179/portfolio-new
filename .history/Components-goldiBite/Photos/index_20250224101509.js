@@ -2,8 +2,8 @@ import styles from './Photos.module.css';
 
 const Photos = () => {
     const embedId = "uf32iSEPRRA";
-
-
+    
+const Photos = () => {
     return (
         <div className={styles.container}>
             <div className={styles.wrap}>
@@ -182,13 +182,16 @@ const Photos = () => {
                 <div className={styles.leftColumn}>
                     <h2 className={styles.h2}>6. WireFrame</h2>
                     <p className={styles.paragraph}>
-                        
+                        In this analysis we compared 8 different competitors to learn what disadvantages and advantages help to support our current theory and to take those lessons into our own app, truly creating something that is meant to last. And to our surprise many of them are ...
                     </p>
                 </div>
             </div>
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
                     <h2 className={styles.h2}>7. Promotional Assets</h2>
+                    <p className={styles.paragraph}>
+                        Promotional assets
+                    </p>
                     <div className={styles.videoResponsive}>
                         <iframe
                             width="853"
@@ -201,7 +204,6 @@ const Photos = () => {
                             referrerPolicy="strict-origin-when-cross-origin"
                         />
                 </div>
-            </div>
             </div>
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
@@ -217,11 +219,11 @@ const Photos = () => {
 
 
 
-               
+                </div>
             </div>
             
         </div>
-        </div>
+
     );
 };
 
