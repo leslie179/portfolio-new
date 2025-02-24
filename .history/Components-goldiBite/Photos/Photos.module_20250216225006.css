@@ -1,0 +1,22 @@
+.img1{
+    
+    background-color: var(--background);
+    padding-bottom: 6px;
+    width: 100%;
+   
+}
+
+.wrap{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 15px;
+    background-color: #F6E6C1;
+}
+
+.container {
+    display: flex; 
+    align-items: stretch; 
+    justify-content: center; 
+    padding-top: 5px;
+    background-color: #F6E6C1;
+}

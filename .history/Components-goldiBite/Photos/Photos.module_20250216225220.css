@@ -1,0 +1,19 @@
+.img1{
+    
+    background-color: var(--background);
+   
+    width: 100%;
+   
+}
+
+.wrap{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 15px;
+    background-color: #F6E6C1;
+}
+
+.container {
+    
+    background-color: #F6E6C1;
+}

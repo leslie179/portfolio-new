@@ -1,0 +1,38 @@
+.img1{
+    
+    background-color: var(--background);
+    padding-bottom: 6px;
+    width: 100%;
+   
+}
+
+.wrap{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 15px;
+    background-color: var(--background);
+}
+
+.container {
+    display: flex; 
+    align-items: stretch; 
+    justify-content: center; 
+    padding-top: 5px;
+    
+}
+
+.img2 {
+    width: 50%; 
+    object-fit: cover; 
+    padding-right: 6px;
+    padding-bottom: 12px;
+    
+}
+
+.img3 {
+    width: 50%; 
+    object-fit: cover; 
+    padding-left: 6px;
+    padding-bottom: 12px;
+  
+}

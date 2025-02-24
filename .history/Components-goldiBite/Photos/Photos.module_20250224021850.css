@@ -1,0 +1,201 @@
+.container {
+    background-color: #f4f2ec;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+
+}
+
+.wrap {
+
+    background-color: #f4f2ec;
+    padding-bottom: 5px;
+    padding-top: 10%;
+}
+
+.wrap1 {
+
+    background-color: #f4f2ec;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 30%;
+}
+
+
+
+.p1 {
+    color: rgb(189, 186, 186);
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    padding-left: 32%;
+    padding-right: 31%;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10%;
+}
+
+.leftColumn {
+    flex: 1;
+}
+
+.h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'NickySans', Arial, sans-serif;
+    margin-bottom: 0.8em;
+}
+.h3 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: 'NickySans', Arial, sans-serif;
+   
+  
+    padding-left: 39%;
+
+}
+
+.contain{
+    padding-left: 10%;
+    width: 45%;
+    padding-bottom: 5%;
+}
+
+.paragraph {
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    width: 90%;
+}
+
+.paragraph1 {
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    width: 40%;
+}
+
+.rightColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 18%;
+    justify-content: center;
+}
+
+.statsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.statNumber {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.statDescription {
+    font-size: 1rem;
+    line-height: 1.4;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; /* this centers the description horizontally */
+}
+.container3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20rem;
+    padding: 2rem 10%;
+   
+    font-family: sans-serif;
+    justify-content: space-between; /* add this */
+    align-items: flex-start; /* add this */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 5%;
+    width: 90%;
+}
+
+.title5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.p5 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    width: 90%;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    padding-left: 10%;
+    width: 90%;
+}
+
+.p3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
+    padding-left: 10%;
+    width: 100%;
+}
+
+.img{
+    margin-right: 5%;
+}
+
+.normalP{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.grey{
+    color: rgb(189, 186, 186);
+    text-align: center;
+}
+
+.img1{
+    
+}

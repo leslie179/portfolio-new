@@ -1,0 +1,83 @@
+.container {
+    background-color: #f4f2ec;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #f4f2ec;
+    padding-bottom: 5px;
+    padding-top: 10%;
+}
+
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.p1 {
+    color: rgb(189, 186, 186);
+    font-family: var(--font-primary);
+    font-weight: var(--regular);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    padding-left: 31%;
+    padding-right: 31%;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 15%;
+}
+
+.leftColumn {
+    flex: 1;
+}
+
+.h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'NickySans', Arial, sans-serif;
+    margin-bottom: 0.8em;
+}
+
+.paragraph {
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    line-height: 1.6;
+}
+
+.rightColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 5%;
+    justify-content: center;
+}
+
+.statsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.statNumber {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+.statDescription {
+    font-size: 1rem;
+    line-height: 1.4;
+}
