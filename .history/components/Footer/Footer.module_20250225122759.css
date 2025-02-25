@@ -1,0 +1,154 @@
+/* Ensure the section above the footer has a black background */
+.sectionAboveFooter {
+    background-color: black;
+    padding-bottom: 0;
+    margin-bottom: -5px; /* Overlaps slightly to remove gap */
+}
+
+/* Footer */
+.Footer {
+    position: sticky;
+    z-index: 1000;
+    background-color: var(--yellow);
+    padding: 50px 20px;
+    text-align: center;
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    margin-top: -5px; /* Pulls it up to remove the gap */
+    overflow: hidden; /* Prevents horizontal scrolling */
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Banner Animation */
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevents banner overflow */
+}
+
+.banner, .banner2 {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: var(--yellow);
+    z-index: 11;
+    transform: rotate(4.3deg);
+    margin-top: 2%;
+    white-space: nowrap;
+}
+
+.bannerContent, .bannerContent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: scrollText 30s linear infinite;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    visibility: visible;
+    z-index: 1000;
+    transform: rotate(5deg);
+    width: max-content;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 60px;
+    z-index: 1000;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Logo */
+.imgColumn img {
+    width: 100px;
+    height: auto;
+}
+
+/* Links */
+.column {
+    text-align: center;
+    max-width: 100%;
+}
+
+.links a {
+    display: block;
+    margin: 0.5rem 0;
+    color: black;
+    text-decoration: none;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.links a:hover {
+    color: #007bff;
+}
+
+/* Other Projects Section */
+.bigWrap {
+    background-color: var(--foreground);
+}
+
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 5%;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.wrapper {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+.img2, .img5 {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Button Styles */
+.button {
+    background-color: var(--yellow);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 3px 5px 0px rgba(255, 255, 255, 3);
+    border: 2px solid white;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 11%;
+    margin-top: 1%;
+}
+
+.button:hover {
+    transform: rotate(-7deg);
+    color: #1580fb;
+}

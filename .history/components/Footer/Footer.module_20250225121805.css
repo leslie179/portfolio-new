@@ -1,0 +1,89 @@
+.Footer {
+    position: sticky;
+    z-index: 1000;
+    background-color: var(--yellow);
+    padding: 50px 20px;
+    text-align: center;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+    margin-top: 4rem;
+    overflow: hidden; /* Prevents horizontal scrolling */
+    width: 100%; /* Ensures footer doesn't extend beyond viewport */
+    max-width: 100%;
+    top:-20
+}
+
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevents banner overflow */
+}
+
+.banner, .banner2 {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    background-color: var(--yellow);
+    z-index: 11;
+    transform: rotate(4.3deg);
+    margin-top: 2%;
+    white-space: nowrap;
+}
+
+.bannerContent, .bannerContent2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    animation: scrollText 30s linear infinite;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    visibility: visible;
+    z-index: 11;
+    transform: rotate(5deg);
+    width: max-content;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Ensure the main container doesn't allow horizontal overflow */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 60px;
+    z-index: 6;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.imgColumn img {
+    width: 100px;
+    height: auto;
+}
+
+.column {
+    text-align: center;
+    max-width: 100%;
+}
+
+.links a {
+    display: block;
+    margin: 0.5rem 0;
+    color: black;
+    text-decoration: none;
+    font-family: 'NickySans', Arial, Helvetica, sans-serif;
+}
+
+.links a:hover {
+    color: #007bff;
+}
