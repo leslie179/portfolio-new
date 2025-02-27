@@ -23,14 +23,9 @@ const BlockThree = () => {
 
                     </div>
                     <div className={styles.textContent}>
-                        <h2 className={styles.title}>Hi, I am Leslie! </h2>
-                        <p className={styles.pp}>And that's my pretty dog Hermie! First I want to thank you for coming to my protfolio.</p>
-                        <p className={styles.pp}>Second, I want to introduce myself. I'm originally from Hong Kong and I have been doing
-                            design for 3 years now plus my BCIT education. I love all kinds of art whether it's music,
-                            instruments, doodles, pottery, gaming I do it all! If you think we're a good fit feel free to reach out
-                            <br />I don't bite, unless you're a cookie! I love meeting new people, especially
-                            when you offer me internships. (or jobs ^_^)
-                        </p>
+                        <h2 className={styles.title}>Hi, I am Leslie!</h2>
+                        <p className={styles.pp}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida eros nec dui scelerisque, sit amet viverra nulla venenatis. Aliquam erat volutpat.</p>
+                        <p className={styles.pp}>Sit amet viverra nulla venenatis. Aliquam erat volutpat.</p>
                       
                     </div>
                 </div>

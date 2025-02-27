@@ -28,7 +28,7 @@ const BlockThree = () => {
                         <p className={styles.pp}>Second, I want to introduce myself. I'm originally from Hong Kong and I have been doing
                             design for 3 years now plus my BCIT education. I love all kinds of art whether it's music,
                             instruments, doodles, pottery, gaming I do it all! If you think we're a good fit feel free to reach out
-                            <br />I don't bite, unless you're a cookie! I love meeting new people, especially
+                            <br>I don't bite, unless you're a cookie! I love meeting new people, especially
                             when you offer me internships. (or jobs ^_^)
                         </p>
                       
