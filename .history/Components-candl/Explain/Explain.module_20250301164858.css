@@ -1,0 +1,118 @@
+/* Main Container */
+.headerContainer {
+    background-color: var(--beige);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    padding-top: 8%;
+    position: relative;
+    overflow: hidden; /* Prevents horizontal scrolling */
+}
+
+.logo {
+    width: 30rem;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+}
+
+/* Annotation Containers */
+.annotationContainer1,
+.annotationContainer2,
+.annotationContainer3 {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Prevents overflow */
+    max-width: 100%;
+}
+
+.annotationContainer1 {
+    flex-direction: row-reverse;
+}
+
+.annotationContainer2 {
+    flex-direction: row-reverse;
+}
+
+.annotationContainer3 {
+    flex-direction: row;
+}
+
+/* Lines */
+.line1, .line2, .line3 {
+    height: 2px;
+    background-color: black;
+    margin-top: 8px;
+}
+
+.line1 {
+    width: 12.5vw;
+}
+
+.line2 {
+    width: 15vw;
+}
+
+.line3 {
+    width: 10vw;
+}
+
+/* White Boxes */
+.whiteBox1,
+.whiteBox3 {
+    position: relative;
+    max-width: 280px; /* Adjusted for better layout */
+    font-family: 'NickySans', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+    padding: 10px;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* Keeping annotation positioning intact */
+.annotation1 {
+    top: 33%;
+    right: 60%;
+}
+
+.annotation2 {
+    top: 50%;
+    right: 33%;
+}
+
+.annotation3 {
+    top: -2.5rem;
+    left:   calc(50vw + 8rem);
+}
+
+
+
+/* Headings */
+.h1,
+.h2 {
+    color: black;
+    font-family: 'NickySans', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
