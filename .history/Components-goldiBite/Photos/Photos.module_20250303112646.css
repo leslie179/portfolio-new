@@ -256,7 +256,7 @@
 }
 
 .img10{
-    max-width: 40rem;
+    max-width: 50rem;
     border-radius: 5px;
     padding-bottom: 3%;
 }
@@ -345,8 +345,8 @@
 }
 
 .userJourney {
-    max-width: 80rem;
-
+    max-width: 100rem;
+   
     padding-bottom: 3%;
     padding-top:  5%;
 }
