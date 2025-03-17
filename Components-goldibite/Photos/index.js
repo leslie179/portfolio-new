@@ -262,17 +262,21 @@ const Photos = () => {
                 </div>
             </div>
 
-             <div className={styles.contain}>
-                <div className={styles.leftColumn}>
+             <div className={styles.contain10}>
+                <div className={styles.leftColumn10}>
                     <h2 className={styles.h2}>8. Promotional Assets</h2>
-                    <div className={styles.videoResponsive}>
-                       
+                 
+                
                 </div>
+   
+                
+
             </div>
-            </div>
+            <img className={styles.img1} src="site-photos-goldibite/brochure.png" />
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
                     <h2 className={styles.h2}>9. Promotional video</h2>
+                    <div className={styles.img1}>
                     <div className={styles.video}>
                     <div className={styles.videoResponsive}>
                         <iframe
@@ -286,9 +290,11 @@ const Photos = () => {
                             referrerPolicy="strict-origin-when-cross-origin"
                         />
                         </div>
+                        </div>
                 </div>
             </div>
             </div>
+            
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
                     <h2 className={styles.h2}>10. Final Product</h2>

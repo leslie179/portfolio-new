@@ -97,6 +97,20 @@
     padding-left: 41%;
 
 }
+.contain {
+    display: flex;
+    flex-direction: row; /* Ensures they align in a row */
+    justify-content: space-between; /* Spaces out the columns */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.leftColumn10 {
+    width: 60%; /* Adjust width as needed */
+    display:block;
+    padding-left: 10%;
+}
+
+
 
 
 
@@ -260,6 +274,12 @@
     border-radius: 5px;
     padding-bottom: 3%;
 }
+
+.img11{
+    max-width: 40rem;
+    border-radius: 5px;
+    
+}
 .img3{
     display: block;
     margin: 0 auto; /* centers the icon horizontally */
@@ -330,13 +350,13 @@
 }
 
 .video{
-    padding-left: 30%;
+   left: -10%;
 }
 
 .videoResponsive iframe {
     position: absolute;
     top: 0;
-    left: 20%;
+    left: 10%;
     right: 0;
     bottom: 0;
     width: 100%;
