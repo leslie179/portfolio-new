@@ -317,8 +317,6 @@ const Photos = () => {
 </div>
 
 
-
-
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>
                     <h2 className={styles.title2}>10. Final Product</h2>

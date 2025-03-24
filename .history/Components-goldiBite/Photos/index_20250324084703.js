@@ -306,18 +306,17 @@ const Photos = () => {
             </div>
 
             <div className={styles.videoResponsive}>
-    <iframe
-        src={`https://www.youtube.com/embed/${embedId}?controls=0`}
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-        title="Embedded YouTube Video"
-        referrerPolicy="strict-origin-when-cross-origin"
-    />
-</div>
-
-
-
+                                <iframe
+                                    width="653"
+                                    height="480"
+                                    src={`https://www.youtube.com/embed/${embedId}?controls=0`}
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                    title="Embedded youtube"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                />
+                            </div>
 
             <div className={styles.contain}>
                 <div className={styles.leftColumn}>

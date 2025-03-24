@@ -448,16 +448,16 @@
     align-items: center;
     
     width: 100%; 
-    max-width: 800px; /* Adjust width as needed */
-    aspect-ratio: 16 / 9; /* Standard widescreen aspect ratio */
+    max-width: 400px; /* Adjust to match your mobile design */
+    aspect-ratio: 9 / 16; /* Ensures mobile-friendly scaling */
     
-    margin: 0 auto; /* Centers it horizontally */
+    margin: 0 auto; /* Centers it */
 }
 
 .videoResponsive iframe {
     position: absolute;
-    top: -2rem;
-   right: 0rem;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     border-radius: 12px; /* Optional: Adds rounded corners */
@@ -466,11 +466,20 @@
 
 
 
-
 .video{
    left: -10%;
 }
 
+.videoResponsive iframe {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto; /* Ensures iframe is perfectly centered inside the container */
+}
 
 .userJourney {
     max-width: 80%;
