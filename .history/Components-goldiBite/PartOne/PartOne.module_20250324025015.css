@@ -1,0 +1,86 @@
+.surveyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .titleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 80%;
+    color: #d45d00;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .titleBox h2 {
+    font-size: 2rem;
+  }
+  
+  .titleBox h3 {
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .yellowBox {
+    background-color: #f8e287;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+  }
+  
+  .surveyLink {
+    color: #d45d00;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .gridBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    width: 80%;
+  }
+  
+  .orangeBox, .greenBox {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orangeBox {
+    background-color: #f7b166;
+  }
+  
+  .greenBox {
+    background-color: #b3e6a4;
+  }
+  
+  .orangeBox strong, .greenBox strong {
+    color: #d45d00;
+    font-size: 1.5rem;
+  }
+  
+  .orangeBox p, .greenBox p {
+    font-size: 1rem;
+  }
+  

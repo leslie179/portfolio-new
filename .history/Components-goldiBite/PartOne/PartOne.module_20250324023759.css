@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Title and first box layout */
+  .topSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #a8480f;
+    margin-bottom: 5px;
+  }
+  
+  .header h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #a8480f;
+  }
+  
+  /* Research Box */
+  .researchBox {
+    flex: 1;
+    background-color: #f9e58c;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .researchBox p {
+    margin-bottom: 10px;
+  }
+  
+  .researchBox ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .researchBox ul li {
+    margin-bottom: 5px;
+  }
+  
+  .link {
+    font-size: 14px;
+    color: #a8480f;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h4 {
+    font-size: 22px;
+    color: #a8480f;
+  }
+  
+  /* Colors */
+  .orange {
+    background-color: #f8c68c;
+  }
+  
+  .green {
+    background-color: #c5e1a5;
+  }
+  
+  .lightGreen {
+    background-color: #d7f2b6;
+  }
+  
+  .lightOrange {
+    background-color: #f5d4a3;
+  }
+  
+  /* Button */
+  .button {
+    background-color: #f8c68c;
+    color: black;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #f5b86c;
+  }
+  

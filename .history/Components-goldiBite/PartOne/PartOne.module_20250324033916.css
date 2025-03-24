@@ -1,0 +1,110 @@
+.surveyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    justify-content: center;
+    align-items: center; /* Centers child elements */
+    background-color: #f4f4f4;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto; /* Centers the entire container */
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 1.5%;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.leftContainer {
+    flex: 1;
+    text-align: left;
+   width: 70%;
+}
+
+.rightContainer {
+    flex: 1.1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.yellowBox {
+    background-color: #f2c94c;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 95%;
+}
+
+.h1 {
+    color: #D25409;
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: left;
+    padding-bottom: 1%;
+    max-width: 120%;
+}
+
+.surveyLink {
+    color: #b3521e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.surveyLink:hover {
+    text-decoration: underline;
+}
+
+.additionalRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25%;
+    align-items: center; /* Centers child elements */
+background-color: #f4f4f4;
+max-width: 80%;
+width: 100%;
+margin: 0 auto;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures boxes align */
+    gap: 5%;
+    max-width: 80%;
+}
+
+.orangeBox, .greenBox {
+    
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+   
+
+}
+
+.orangeBox {
+    background-color: #e29657;
+    color: #693312;
+    width: 70%;
+    flex: 1;
+}
+
+.greenBox {
+    background-color: #a8db75;
+    color: #36591c;
+}

@@ -1,0 +1,13 @@
+.swimmingPool{
+    position: relative;
+    width: 100%;
+    border: 10px solid green;
+}
+
+
+
+
+
+.swimmingGirl{
+    position: absolute;
+}

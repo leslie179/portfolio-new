@@ -1,0 +1,98 @@
+.surveyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 17%;
+    padding: 20px;
+    margin-left: 10%;
+   margin-right: 10%;
+    background-color: #f4f4f4;
+    max-width: 80%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 1%;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+}
+
+.leftContainer {
+    flex: 1;
+    text-align: left;
+    max-width: 70%;
+}
+
+.rightContainer {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.yellowBox {
+    background-color: #f2c94c;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 53%;
+}
+
+.h1 {
+    color: #D25409;
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: left;
+    padding-bottom: 1%;
+}
+
+.surveyLink {
+    color: #b3521e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.surveyLink:hover {
+    text-decoration: underline;
+}
+
+.additionalRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.gridContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures boxes align */
+    gap: 15px;
+}
+
+.orangeBox, .greenBox {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    padding: 20px;
+   
+   width: 53%;
+}
+
+.orangeBox {
+    background-color: #e29657;
+    color: #693312;
+}
+
+.greenBox {
+    background-color: #a8db75;
+    color: #36591c;
+}

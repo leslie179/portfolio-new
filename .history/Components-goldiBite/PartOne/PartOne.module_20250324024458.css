@@ -1,0 +1,61 @@
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec;
+    padding: 20px;
+  }
+  
+  .title-box {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .title-box h2 {
+    color: #803300;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .title-box h3 {
+    color: #803300;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .content-box {
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .yellow-box {
+    background-color: #f4d35e;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .orange-box, .green-box {
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .orange-box {
+    background-color: #e59442;
+    color: #5a2200;
+  }
+  
+  .green-box {
+    background-color: #a4d792;
+    color: #2e5f1e;
+  }
+  

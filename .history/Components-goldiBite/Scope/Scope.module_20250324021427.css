@@ -1,0 +1,79 @@
+.wrap {
+    text-align: center;
+    padding: 10%;
+    background-color: #f5f5f5;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #005000;
+    margin-bottom: 30px;
+    padding-bottom: 5%;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .step {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Zig-zag effect */
+  .up {
+    transform: translateY(-30px);
+  }
+  
+  .down {
+    transform: translateY(70px);
+  }
+  
+  .image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    transform: rotate(-5deg);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .badge {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .stepTitle {
+    color: #a8480f;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .taskList li {
+    margin-top: 5px;
+  }
+  

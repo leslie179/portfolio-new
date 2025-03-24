@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Align header with the first box */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px; /* Adjust width to align properly */
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #a8480f;
+    margin-bottom: 5px;
+  }
+  
+  .header h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #a8480f;
+  }
+  
+  /* Grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h4 {
+    font-size: 22px;
+    color: #a8480f;
+  }
+  
+  /* Colors */
+  .yellow {
+    background-color: #f9e58c;
+    grid-column: span 2; /* Ensure first card aligns with the title */
+  }
+  
+  .orange {
+    background-color: #f8c68c;
+  }
+  
+  .green {
+    background-color: #c5e1a5;
+  }
+  
+  .lightGreen {
+    background-color: #d7f2b6;
+  }
+  
+  .lightOrange {
+    background-color: #f5d4a3;
+  }
+  
+  /* Annotations */
+  .annotation {
+    font-size: 14px;
+    color: #a8480f;
+    font-style: italic;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  /* Survey link */
+  .link {
+    font-size: 14px;
+    color: #a8480f;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Button */
+  .button {
+    background-color: #f8c68c;
+    color: black;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #f5b86c;
+  }
+  

@@ -1,0 +1,29 @@
+.leftRightContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+    padding: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.leftContent,
+.rightContent {
+    width: 50%;
+    padding: 16px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.h1 {
+    color: var(--yellow);
+    font-family: 'NickySans', Arial, sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 30%;
+}
