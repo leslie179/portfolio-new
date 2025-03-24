@@ -25,7 +25,7 @@ const Menu = () => {
             <img className={styles.img} src="/site-photos/site-logo.png" alt="Site Logo" />
             <nav>
                 <Link href="/" className={styles.home}>HOME</Link>
-                <Link href="/pawbypaw" className={styles.home}>PROJECTS</Link>
+              
             </nav>
         </div>
     );
