@@ -54,7 +54,7 @@ export default function Home() {
       <main>
         <Menu />
         <Banner />
-        <Swimming />
+        {/* <Swimming /> */}
         <BlockOne />
         <BlockTwo />
         <BlockFour />

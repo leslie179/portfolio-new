@@ -42,12 +42,12 @@
 .h1 {
     z-index: 1000000000;
     position: absolute;
-    top: 8%; 
+    top: 5%; 
     left: 50%;
     transform: translateX(-50%); 
     width: max-content; 
-    color: black;
+    color: var(--yellow);
     font-family: 'NickySans', Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.8rem;
 }

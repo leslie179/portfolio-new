@@ -3,7 +3,7 @@ import styles from './Menu.module.css';
 import Link from 'next/link';
 
 const Menu = () => {
-
+   // const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
     useEffect(() => {

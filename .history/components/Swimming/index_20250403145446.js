@@ -42,12 +42,11 @@ return () => {
   
     return (
         <div>
-            
+            <h1>Love for designing as deep as the ocean!</h1>
             <div className={styles.swimmingPool} ref={swimmingPoolRef}>
                 <div className={styles.water}>
                    <img src="/site-photos/sea-back-layer.png"/> 
                 </div>
-                <h1 className={styles.h1}>Love for designing as deep as the ocean!</h1>
                 <div className={styles.swimmingGirl} ref={swimmingGirlRef}>
                    <img src="/site-photos/body.png"/> 
                 </div>

@@ -10,7 +10,7 @@
 .swimmingPool{
     position: relative;
     width: 100%;
-   
+    border: 10px solid green;
     height:100vh;
     overflow: hidden;
 }
@@ -38,16 +38,4 @@
 .swimmingGirl img{
   object-fit: contain;
     height: 100%;
-}
-.h1 {
-    z-index: 1000000000;
-    position: absolute;
-    top: 8%; 
-    left: 50%;
-    transform: translateX(-50%); 
-    width: max-content; 
-    color: black;
-    font-family: 'NickySans', Arial, Helvetica, sans-serif;
-    font-weight: 900;
-    font-size: 2rem;
 }

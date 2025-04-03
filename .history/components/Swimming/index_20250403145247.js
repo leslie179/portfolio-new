@@ -10,10 +10,33 @@ export default function Swimming() {
     
     useEffect(() => {
        
+        // let t=0;
+        // let r={x:0, y:0};
         let mouse = {x:0, y:0};
         let follow = {x:0, y:0};
        let interval = null;
-       
+        // const generateNoise = () => {
+        //     let dx = 20* noise2D(Math.random(), t);
+        //     let dy = 20* noise2D(Math.random(), t);
+        //     t+=0.01;    
+        //     // console.log (dx, dy, t);
+        //     // if (r.x > 0) {
+        //     //     follow.x = r.x - 10;
+        //     //     // dx += followx;
+        //     //     r.x -= 10;
+        //     // }
+        //     // swimmingGirlRef.current.style.transform = `translate(${(dx)}px, ${(dy)}px)`;
+        //     // const swimmingGirlBounds = swimmingGirlRef.current.getBoundingClientRect();
+        //     // r.x = mouse.x - swimmingGirlBounds.left;
+        //     // r.y = mouse.y - swimmingGirlBounds.top;
+        //     // swimmingGirlRef.current.style.top = `${mouse.y}px`;
+        //     // swimmingGirlRef.current.style.left = `${follow.x}px`;
+        //     requestAnimationFrame(generateNoise);
+        // }
+        // if (swimmingGirlRef.current){
+        //     generateNoise();
+            
+        // }
         if (swimmingPoolRef.current){
             const swimmingPoolBounds = swimmingPoolRef.current.getBoundingClientRect();
             swimmingPoolRef.current.onmousemove = (e) => {
@@ -21,7 +44,15 @@ export default function Swimming() {
                 const y = e.clientY - swimmingPoolBounds.top - 10;
                 mouse.x=x;
                 mouse.y=y;
-               
+                // swimmingGirlRef.current.style.top = `${y}px`;
+                // swimmingGirlRef.current.style.left = `${x}px`;  
+            
+                // const swimmingGirlBounds = swimmingGirlRef.current.getBoundingClientRect();
+                // r.x = x - swimmingGirlBounds.left;
+                // r.y = y - swimmingGirlBounds.top;
+                // console.log(r);
+                // const m = Math.sqrt(r.x*r.x + r.y*r.y);
+
 
             }
                 interval = setInterval(() => {
@@ -42,17 +73,14 @@ return () => {
   
     return (
         <div>
-            
             <div className={styles.swimmingPool} ref={swimmingPoolRef}>
                 <div className={styles.water}>
                    <img src="/site-photos/sea-back-layer.png"/> 
                 </div>
-                <h1 className={styles.h1}>Love for designing as deep as the ocean!</h1>
                 <div className={styles.swimmingGirl} ref={swimmingGirlRef}>
                    <img src="/site-photos/body.png"/> 
                 </div>
             </div>
-            
         </div>
     )
 }
